@@ -1,16 +1,13 @@
-<<<<<<< HEAD
-
-#contact{
-    border: solid red 2px;
-    height: 100vh;
-=======
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+#contact{
+    border: solid red 2px;
+    height: 100vh;
+}
 
 body {
     background-color: lightblue;
->>>>>>> 731bc9ab41d1229ec605853d1ff45fd01acaf58c
 }
