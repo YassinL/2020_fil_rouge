@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #contact{
     border: solid red 2px;
     height: 100vh;
@@ -10,4 +11,57 @@
 
 body {
     background-color: lightblue;
+}
+
+
+
+
+.tableaucomp {
+    border: 1px solid black;
+    background-color: white;
+}
+.tete {
+    background-color: black;
+    
+}
+
+.logo {
+    width: 80px;
+    padding: 0 10px auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/*<-- efect menu --> */
+.navigation {
+    width: 1276px;
+    margin: auto;
+    background: black;
+    position: relative;
+    text-align: right;
+}
+.navigation ul{
+    list-style: none;
+}
+.menu > li {
+    display: inline-block;
+    position: relative;
+    font-weight: bold; /*<-- gross mot--> */
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none; /*<-- suppr deco --> */
+    
+}
+.menu li a:hover{
+    color: #352bc0;
+    transition: all .5s; /*<-- efect menu --> */
+       
 }
