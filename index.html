@@ -103,14 +103,14 @@
     </section>
 
     <section id="contact">
-        <div id="formulaire">
-            <h1>CONTACTEZ-NOUS</h1>
-            <form action="#">
-                <input type="text" name="Nom">
-                <input type="text" name="Email">
-                <textarea name="Message" id="" cols="30" rows="10"></textarea>
+        <h1>CONTACTEZ-NOUS</h1>
+        <div class="formulaire">
+            <form action="" method="get">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" />
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" placeholder="E-mail" />
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <input type="submit" value="Envoyer" />
             </form>
-            <button>Envoyez</button>
         </div>
     </section>
 
