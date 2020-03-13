@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#contact{
+#contact {
     border: solid red 2px;
     height: 100vh;
 }
@@ -13,16 +13,13 @@ body {
     background-color: lightblue;
 }
 
-
-
-
 .tableaucomp {
     border: 1px solid black;
     background-color: white;
 }
+
 .tete {
     background-color: black;
-    
 }
 
 .logo {
@@ -35,7 +32,10 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
+
 /*<-- efect menu --> */
+
 .navigation {
     width: 1276px;
     margin: auto;
@@ -43,25 +43,30 @@ h3 {
     position: relative;
     text-align: right;
 }
-.navigation ul{
+
+.navigation ul {
     list-style: none;
 }
-.menu > li {
+
+.menu>li {
     display: inline-block;
     position: relative;
-    font-weight: bold; /*<-- gross mot--> */
+    font-weight: bold;
+    /*<-- gross mot--> */
 }
-.menu > li > a{
+
+.menu>li>a {
     display: block;
     padding: 15px 20px;
     color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    text-decoration: none; /*<-- suppr deco --> */
-    
+    text-decoration: none;
+    /*<-- suppr deco --> */
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: #352bc0;
-    transition: all .5s; /*<-- efect menu --> */
-       
+    transition: all .5s;
+    /*<-- efect menu --> */
 }
