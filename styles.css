@@ -4,43 +4,28 @@
     box-sizing: border-box;
 }
 
-#contact form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#contact h1{
-    text-align: center;
-    padding-bottom: 60px;
-}
-
-form input, textarea{
-width: 400px;
-height: 10px;
-background: #F4F1F1;
-border: #151515 solid 1px;
-margin:10px;
-font-size: 14px;
-color:  #9F9F9F;
-padding: 30px;
-
-}
-
-#contact textarea{
-    height:150px;
-}
-
-#contact button{
-    width: 182px;
-height: 38px;
-border: #151515 solid 1px;
-margin-top: 30px;
-}
-
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #151515;
+    overflow-x: hidden;
     background-color: lightblue;
 }
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contact button {
+    width: 182px;
+    height: 38px;
+    border: #151515 solid 1px;
+    margin-top: 30px;
+}
+
+
+/* PARTIE NAVIGATION*/
 
 .tableaucomp {
     border: 1px solid black;
@@ -65,10 +50,13 @@ h3 {
 
 /*<-- efect menu --> */
 
+
+/*<-- effect menu --> */
+
 .navigation {
     width: 1276px;
     margin: auto;
-    background: black;
+    background: #151515;
     position: relative;
     text-align: right;
 }
@@ -98,4 +86,247 @@ h3 {
     color: #352bc0;
     transition: all .5s;
     /*<-- efect menu --> */
+    transition: all .5s;
+    /*<-- efect menu --> */
+}
+
+
+/* PARTIE MAIN */
+
+#backgroundContainer {
+    position: relative;
+    width: 100%;
+    ;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#backgroundContainer h1 {
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    font-size: 7rem;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#main1 {
+    width: 100%;
+}
+
+#main1 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: Montserrat Alternates;
+    z-index: 30;
+    color: white;
+}
+
+
+/* PARTIE SERVICES */
+
+#service p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center, left;
+    margin-top: 60px;
+    color: white;
+}
+
+#service #service1 img {
+    width: 130px;
+    height: 125px;
+    position: relative;
+    right: 100px;
+    top: 30px;
+}
+
+#service #service1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    line-height: 60px;
+}
+
+#service #service2 {
+    line-height: 60px;
+    margin-top: 60px;
+}
+
+#service #service1 ul {
+    font-family: Montserrat Alternates;
+    font-size: 20px;
+    color: white;
+}
+
+#service #service2 ul {
+    font-family: Montserrat Alternates;
+    font-size: 20px;
+    color: white;
+}
+
+#service #service2 img {
+    display: inline-block;
+    float: right;
+    width: 134px;
+    height: 113px;
+    position: relative;
+    bottom: 140px;
+    right: 300px;
+}
+
+
+/* PARTIE PROJETS */
+
+
+/* PARTIE EQUIPE */
+
+#equipe .groupe .photo .profil {
+    height: 225px;
+    width: 225px;
+    border-radius: 100%;
+}
+
+#equipe .groupe .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#equipe .groupe .left {
+    padding-left: 50px;
+}
+
+#equipe .groupe {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+#equipe .groupe .photo .deco {
+    border: solid white 1px;
+    padding: 10px 20px;
+}
+
+#equipe .groupe .photo p {
+    margin-top: 20px;
+}
+
+#equipe {
+    background-color: #151515;
+    color: #fff;
+    width: 100%;
+    padding-top: 140px;
+}
+
+
+/* PARTIE CONTACTS */
+
+#contact {
+    padding-top: 90px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 36px;
+    padding-top: 60px;
+}
+
+#contact hr {
+    border: 1px solid #151515;
+    width: 555px;
+    margin: 0 auto;
+}
+
+form input,
+textarea {
+    width: 400px;
+    height: 10px;
+    background: #F4F1F1;
+    border: #151515 solid 1px;
+    margin: 10px;
+    font-size: 14px;
+    color: #9F9F9F;
+    padding: 30px;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact button {
+    width: 182px;
+    height: 38px;
+    border: #151515 solid 1px;
+    margin-top: 30px;
+}
+
+#contact button:hover {
+    border: #fff 1px solid;
+    background-color: #151515;
+    color: white;
+}
+
+
+/* PARTIE AGENCE */
+
+#adresse {
+    padding: 140px 0;
+}
+
+.agence1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.agence2 h2 {
+    padding: 30px 0;
+    font-size: 24px;
+}
+
+.mailto {
+    text-decoration: none;
+    color: #151515;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+footer a {
+    padding: 0 20px;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer hr {
+    border: 5px solid #151515;
 }

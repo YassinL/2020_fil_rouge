@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,15 +28,30 @@
     </nav>
 
     <section id="main1">
-        <video src="*">Video en background</video>
-        <h1>Virtual Virus</h1>
+
+        <div id="backgroundContainer">
+
+            <h1>Virtual Virus</h1>
+
+
+            <video autoplay loop mute id="backgroundVideo">
+
+                <source src="./Vidéos/vrenfant.webm" type="video/webm">
+                <source src="./Vidéos/vrenfant.ogv" type="video/ogv">
+                <source src="./Vidéos/vrenfant.mp4" type="video/mp4">
+                    
+        </video>
+
+        </div>
+
         <h2>Spécialisé pour la VR</h2>
+
     </section>
 
     <section id="service">
         <p>Nous avons prévu d'être la meilleure alternative de conception de réalité virtuelle, contribuant à l'évolution, l'efficacité et la productivité de nos clients. Nous serons des innovateurs et des leaders sur le marché de la réalité virtuelle en
             lançant un nouveau jeux qui nous permettra de capter une clientèle hétéroclite pour atteindre nos objectifs et satisfaire les besoins de nos clients.</p>
-        <div>
+        <div id="service1">
             <img src="./Images/Group.png" alt="Logo service">
             <ul>
                 <li>Analyser les besoins du projet et les moyens idéaux pour le réaliser</li>
@@ -44,11 +60,11 @@
             </ul>
         </div>
 
-        <div>
+        <div id="service2">
             <ul>
                 <li>Nous développons sur Mac, Windows, iOs & Android pour APPS & Jeux</li>
-                <li></li>
-                <li></li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nesciunt excepturi harum.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore quis veritatis.</li>
             </ul>
             <img src="./Images/statistics 1.png" alt="icone">
         </div>
@@ -79,33 +95,34 @@
     <section id="equipe">
         <div class="groupe">
             <div class="photo">
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Yassin</p>
-                <p>Dev Web et Patissier</p>
+                <img src="./Images/jeu.png" alt="">
+                <img class="profil" src="./Images/yassin(1).jpg" alt="">
+                <p class="deco">Yassin</p>
+                <p>Dev. Web & Patissier</p>
             </div>
-            <div class="photo">
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Yassin</p>
-                <p>Deb Web et Patissier</p>
+            <div class="photo left">
+                <img src="./Images/foot.png" alt="">
+                <img class="profil" src="./Images/yoram(1).jpg" alt="">
+                <p class="deco">Yoram</p>
+                <p>Dev. Web & Mécanicien</p>
             </div>
-            <div class="photo">
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Yassin</p>
-                <p>Deb Web et Patissier</p>
+            <div class="photo left">
+                <img src="./Images/chien.png" alt="">
+                <img class="profil" src="./Images/andreia(2).jpg" alt="">
+                <p class="deco">Andreia</p>
+                <p>Dev. Web & Wedesigner</p>
             </div>
-            <div class="photo">
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Yassin</p>
-                <p>Deb Web et Patissier</p>
+            <div class="photo left">
+                <img src="./Images/danse.png" alt="">
+                <img class="profil" src="./Images/yassin(1).jpg" alt="">
+                <p class="deco">Miguel</p>
+                <p>Dev. Web & PDG</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
+        <hr>
         <h1>CONTACTEZ-NOUS</h1>
         <div class="formulaire">
             <form action="" method="get">
@@ -114,24 +131,32 @@
                 <textarea name="Message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
                 <button>Envoyer</button>
             </form>
+
         </div>
     </section>
 
     <section id="adresse">
         <div class="agence1">
             <div class="agence2">
-                <h3>Notre agence</h3>
-                <p>21 rue de la Vanne, <br> 92120 Montrouge</p>
-                <p>(Métro 4, Mairie de Montrouge, RER B Gentilly : 10 minutes à pieds</p>
-                <p>0600000000</p>
-                <p>virtualvirus@gmail.com</p>
+                <hr>
+                <h2>Notre agence</h2>
+                <p>21 rue de la Vanne, <br> 92120 Montrouge <br><br>
+                    <i>(Métro 4, Mairie de Montrouge, RER B Gentilly : 10 minutes à pieds)</i> <br><br> 06 40 40 10 00 <br><br></p>
+                <a class="mailto" href="mailto:virtualvirus@gmail.com">virtualvirus@gmail.com</a>
+
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.233127312743!2d2.3267673504967163!3d48.81561321157134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67107facf0c43%3A0xe7e0e0cdc74b9b7f!2s21%20Rue%20de%20la%20Vanne%2C%2092120%20Montrouge!5e0!3m2!1sfr!2sfr!4v1584108201968!5m2!1sfr!2sfr"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                width="492" height="369" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </section>
     <footer>
-        <a href=""></a>
+        <div class="reseaux">
+            <a href="#"><img src="./Images/facebook.png" alt=""></a>
+            <a href="#"><img src="./Images/instagram.png" alt=""></a>
+            <a href="#"><img src="./Images/twitter.png" alt=""></a>
+            <a href="#"><img src="./Images/linkedin.png" alt=""></a>
+        </div>
+        <hr>
     </footer>
 
     <script src="script.js"></script>
