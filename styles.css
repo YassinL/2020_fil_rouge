@@ -180,7 +180,7 @@ h3 {
 }
 
 #service #service2 img {
-    display: inline-block;
+    display: block;
     float: right;
     width: 134px;
     height: 113px;
@@ -193,8 +193,12 @@ h3 {
 /* PARTIE PROJETS */
 
 #projet .jeu1 .jeu2 .jeu3 {
-    display: flex;
-    justify-content: space-between;
+    height: 225px;
+    width: 225px;
+    border-radius: 100%;
+    display: block;
+    flex-direction: row;
+    
 }
 
 
