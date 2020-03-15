@@ -192,6 +192,12 @@ h3 {
 
 /* PARTIE PROJETS */
 
+#projet .jeu1 .jeu2 .jeu3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* PARTIE EQUIPE */
 
@@ -311,6 +317,17 @@ textarea {
     text-decoration: none;
     color: #151515;
 }
+
+.icone {
+    display: block;
+    float: left;
+    width: 134px;
+    height: 113px;
+    position: relative;
+    bottom: 300px;
+    right: 300px;
+}
+
 
 .reseaux {
     display: flex;
