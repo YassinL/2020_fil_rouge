@@ -8,6 +8,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #151515;
+    overflow-x: hidden;
+
 }
 section {
     width: 90%;
@@ -99,7 +101,59 @@ h3 {
 #main1 {
     width: 100%;
 }
+
+
+
+
+/* PARTIE SERVICES */
+
+
+
+
+
+/* PARTIE PROJETS */
+
+
+
+
+/* PARTIE EQUIPE */
+#equipe .groupe .photo .profil{
+    height: 225px;
+    width: 225px;
+    border-radius: 100%;
+}
+#equipe .groupe .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#equipe .groupe .left {
+    padding-left: 50px;
+}
+#equipe .groupe{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+#equipe .groupe .photo .deco {
+    border: solid white 1px;
+    padding: 10px 20px;
+}
+#equipe .groupe .photo p{
+    margin-top: 20px;
+}
+#equipe{
+    background-color: #151515;
+    color: #fff;
+    width: 100%;
+    padding-top: 140px;
+}
+
 /* PARTIE CONTACTS */
+#contact {
+    padding-top: 90px;
+}
 
 #contact form{
     display: flex;
@@ -135,6 +189,7 @@ padding: 30px;
 
 #contact textarea{
     height:150px;
+    resize: none;
 }
 
 #contact button{
