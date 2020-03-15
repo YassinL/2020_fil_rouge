@@ -67,10 +67,6 @@ h3 {
 
 /* PARTIE MAIN */
 
-#main1 h1 {
-    font-family: 'Megrim', cursive;
-}
-
 #backgroundContainer {
     position: relative;
     width: 100%;;
@@ -83,9 +79,9 @@ h3 {
 }
 
 #backgroundContainer h1 {
+    font-family: 'Megrim', cursive;
     text-align: center;
     font-size: 7rem;
-    font-family: fantasy;
     padding: 20px;
     margin: 15px;
     z-index: 1;
@@ -99,6 +95,9 @@ h3 {
     right:0;
     width: 100%;    
 
+}
+#main1 {
+    width: 100%;
 }
 /* PARTIE CONTACTS */
 
