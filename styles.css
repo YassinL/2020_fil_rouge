@@ -110,7 +110,6 @@ h3 {
 }
 
 #backgroundContainer h1 {
-    
     font-family: 'Megrim', cursive;
     text-align: center;
     font-size: 7rem;
@@ -120,7 +119,6 @@ h3 {
 }
 
 #backgroundContainer h2 {
-    
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 6rem;
@@ -195,7 +193,7 @@ h3 {
     height: 113px;
     position: relative;
     bottom: 140px;
-    right: 300px;
+    right: 200px;
 }
 
 
@@ -208,7 +206,6 @@ h3 {
     display: block;
     flex-direction: row;
 }
-
 
 
 /* PARTIE EQUIPE */
@@ -339,7 +336,6 @@ textarea {
     bottom: 300px;
     right: 300px;
 }
-
 
 .reseaux {
     display: flex;
