@@ -104,14 +104,30 @@ h3 {
     overflow: hidden;
 }
 
+#backgroundContainer .titre {
+    display: flex;
+    flex-direction: column;
+    color: blanchedalmond;
+}
+
 #backgroundContainer h1 {
+    
     font-family: 'Megrim', cursive;
     text-align: center;
     font-size: 7rem;
     padding: 20px;
     margin: 15px;
     z-index: 1;
-    opacity: 0.6;
+}
+
+#backgroundContainer h2 {
+    
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    font-size: 6rem;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
 }
 
 #backgroundVideo {
