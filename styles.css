@@ -223,10 +223,10 @@ video {
 
 /* PARTIE SERVICES */
 
-
 #service {
     padding: 140px 0 140px 0;
 }
+
 #service p {
     font-size: 25px;
     text-align: center;
@@ -241,8 +241,8 @@ video {
 #service #service1 img {
     width: 90px;
     height: 90px;
-
 }
+
 #service #service2 img {
     width: 90px;
     height: 90px;
@@ -264,7 +264,8 @@ video {
     line-height: 50px;
 }
 
-#service #service1,#service2 ul {
+#service #service1,
+#service2 ul {
     font-size: 16px;
 }
 
@@ -289,7 +290,7 @@ video {
     width: 555px;
     margin: 0 auto;
     border: 1px solid black;
-    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 #projet h1 {
@@ -303,8 +304,8 @@ video {
 #projet #allTheGame .jeux1 {
     background-color: #12477C;
     color: white;
-    border: 2px solid black;
     margin-bottom: 60px;
+    box-shadow: -1em 0 .5em black;
 }
 
 #projet #allTheGame .jeux1 h3 {
@@ -315,8 +316,8 @@ video {
 #projet #allTheGame .jeux2 {
     background-color: #B78F68;
     color: white;
-    border: 2px solid black;
     margin-bottom: 60px;
+    box-shadow: -1em 0 .5em black;
 }
 
 #projet #allTheGame .jeux2 h3 {
