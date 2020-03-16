@@ -208,7 +208,29 @@ h3 {
     height: 225px;
     width: 225px;
     border-radius: 100%;
-    
+    display: block;
+    flex-direction: row;
+}
+
+#projet #barre {
+    width: 555px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+#projet h1 {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#projet #allTheGame {}
+
+#projet #allTheGame .jeux1 {
+    box-shadow: 0px 0px 100px blue;
 }
 
 
@@ -233,7 +255,6 @@ h3 {
 #equipe .groupe {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-bottom: 140px;
 }
 
@@ -245,10 +266,7 @@ h3 {
 #equipe .groupe .photo p {
     margin-top: 20px;
 }
-#equipe .icon {
-    width: 50px;
-    padding-bottom: 10px;
-}
+
 #equipe {
     background-color: #151515;
     color: #fff;
@@ -324,9 +342,7 @@ textarea {
     display: flex;
     justify-content: space-between;
 }
-.agence2{
-    border: red 2px solid;
-}
+
 .agence2 h2 {
     padding: 30px 0;
     font-size: 24px;
@@ -336,14 +352,15 @@ textarea {
     text-decoration: none;
     color: #151515;
 }
+
 .icone {
-    display: flex;
-    justify-content: center;
-    margin-top: 3Opx;
-    border: red 2px solid;
-}
-.icone img{
-    width: 90px;
+    display: block;
+    float: left;
+    width: 134px;
+    height: 113px;
+    position: relative;
+    bottom: 300px;
+    right: 300px;
 }
 
 .reseaux {
