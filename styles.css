@@ -19,17 +19,19 @@ section {
 
 /* PARTIE NAVIGATION*/
 
-nav .logo{
+nav .logo {
     margin: 10px 0 0 20px;
     display: inline-block;
 }
+
 nav .logo img {
     width: 45px;
 }
+
 nav {
     background-color: white;
     -webkit-box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, 0.1);
-            box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, 0.1);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -59,7 +61,10 @@ nav li a:focus,
     background-color: #151515;
     color: white;
 }
+
+
 /* menu */
+
 .menu {
     display: none;
     clear: both;
@@ -68,7 +73,10 @@ nav li a:focus,
     -o-transition: max-height .2s ease-out;
     transition: max-height .2s ease-out;
 }
+
+
 /* menu icon */
+
 .menu__icon {
     cursor: pointer;
     display: block;
@@ -76,9 +84,9 @@ nav li a:focus,
     padding: 28px 20px;
     position: relative;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .hamburger {
@@ -86,9 +94,9 @@ nav li a:focus,
     display: block;
     height: 3px;
     position: relative;
-    -webkit-transition:.2s ease-out;
-    -o-transition:.2s ease-out;
-    transition:.2s ease-out;
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
     width: 30px;
 }
 
@@ -112,7 +120,10 @@ nav li a:focus,
 .hamburger:after {
     top: -8px;
 }
+
+
 /* menu checkbox */
+
 .menu__checkbox {
     opacity: 0;
 }
@@ -137,20 +148,21 @@ nav li a:focus,
 
 .menu__checkbox:checked~.menu__icon .hamburger:before {
     -webkit-transform: rotate(-225deg);
-        -ms-transform: rotate(-225deg);
-            transform: rotate(-225deg);
+    -ms-transform: rotate(-225deg);
+    transform: rotate(-225deg);
 }
 
 .menu__checkbox:checked~.menu__icon .hamburger:after {
     -webkit-transform: rotate(225deg);
-        -ms-transform: rotate(225deg);
-            transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
 }
 
 .menu__checkbox:checked~.menu__icon:not(.steps) .hamburger:before,
 .menu__checkbox:checked~.menu__icon:not(.steps) .hamburger:after {
     top: 0;
 }
+
 
 /* PARTIE MAIN */
 
@@ -292,7 +304,7 @@ nav li a:focus,
 #projet #allTheGame {}
 
 #projet #allTheGame .jeux1 {
-    box-shadow: 0px 0px 100px blue;
+    box-shadow: 0px 0px 100px lightblue;
 }
 
 
@@ -448,33 +460,31 @@ footer hr {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
 /* 48em = 768px */
+
 @media (max-width: 68em) {
-    nav .logo{
-        margin:10px 0 0 0;
+    nav .logo {
+        margin: 10px 0 0 0;
     }
 }
 
 @media (min-width: 68em) {
- 
-nav li {
-    float: left;
-}
-
-nav li a {
-    padding: 20px 30px;
-}
-
-.menu {
-    display: block;
-    clear: none;
-    float: right;
-    max-height: none;
-}
-
-.menu__icon,
-.menu__checkbox,
-.hamburger {
-    display: none;
-}
+    nav li {
+        float: left;
+    }
+    nav li a {
+        padding: 20px 30px;
+    }
+    .menu {
+        display: block;
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .menu__icon,
+    .menu__checkbox,
+    .hamburger {
+        display: none;
+    }
 }
