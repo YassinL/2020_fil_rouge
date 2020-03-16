@@ -9,7 +9,6 @@ body {
     font-size: 14px;
     color: #151515;
     overflow-x: hidden;
-    background-color: lightblue;
 }
 
 section {
@@ -107,7 +106,7 @@ h3 {
 #backgroundContainer .titre {
     display: flex;
     flex-direction: column;
-    color: blanchedalmond;
+    color: white;
 }
 
 #backgroundContainer h1 {
@@ -122,7 +121,7 @@ h3 {
 
 #backgroundContainer h2 {
     
-    font-family: 'Megrim', cursive;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 6rem;
     padding: 20px;
@@ -146,8 +145,8 @@ h3 {
     display: flex;
     justify-content: center;
     font-size: 36px;
-    font-family: Montserrat Alternates;
-    z-index: 30;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
     color: white;
 }
 
@@ -155,12 +154,10 @@ h3 {
 /* PARTIE SERVICES */
 
 #service p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center, left;
     margin-top: 60px;
-    color: white;
 }
 
 #service #service1 img {
@@ -184,15 +181,11 @@ h3 {
 }
 
 #service #service1 ul {
-    font-family: Montserrat Alternates;
     font-size: 20px;
-    color: white;
 }
 
 #service #service2 ul {
-    font-family: Montserrat Alternates;
     font-size: 20px;
-    color: white;
 }
 
 #service #service2 img {
@@ -214,7 +207,6 @@ h3 {
     border-radius: 100%;
     display: block;
     flex-direction: row;
-    
 }
 
 
