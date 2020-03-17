@@ -418,14 +418,6 @@ video {
     flex-direction: row;
 }
 
-#projet .jeu1 .jeu2 .jeu3 {
-    height: 225px;
-    width: 225px;
-    border-radius: 100%;
-    display: block;
-    flex-direction: row;
-}
-
 #projet #barre {
     width: 555px;
     margin: 0 auto;
@@ -449,6 +441,14 @@ video {
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease;
+}
+
+#projet #allTheGame .jeux1 img:hover {
+    -webkit-transform: scale(1.25);
+}
+
+#projet #allTheGame .jeux2 img:hover {
+    -webkit-transform: scale(1.25);
 }
 
 #projet #allTheGame .jeux1 h3 {
@@ -677,80 +677,84 @@ footer hr {
 }
 
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-     
+/* Extra small devices (phones, 600px and down) */
 
+@media only screen and (max-width: 600px) {
     body {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         color: #151515;
         overflow-x: hidden;
     }
-    
     section {
         width: 100%;
         margin: 0 auto;
     }
-/* PARTIE MAIN */
-
-#backgroundContainer {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #151515;
-    border: hotpink solid 2px;
-}
-
-#backgroundContainer .titre {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    border: hotpink solid 2px;
-}
-
-#backgroundContainer h1 {
-   
-    font-size: 48px;
-    line-height: 56px;
-    border: hotpink solid 2px;
-}
-
-#backgroundContainer h2 {
-    font-size: 18px;
-line-height: 22px;
-}
-
-#backgroundVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
-
-#main1 {
-    width: 100%;
-}
-
-video {
-    opacity: 0.7;
+    /* PARTIE MAIN */
+    #backgroundContainer {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #151515;
+        border: hotpink solid 2px;
+    }
+    #backgroundContainer .titre {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        border: hotpink solid 2px;
+    }
+    #backgroundContainer h1 {
+        font-size: 48px;
+        line-height: 56px;
+        border: hotpink solid 2px;
+    }
+    #backgroundContainer h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    #backgroundVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    #main1 {
+        width: 100%;
+    }
+    video {
+        opacity: 0.7;
+    }
 }
 
 
- }
+/* Small devices (portrait tablets and large phones, 600px and up) */
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {...}
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {...}
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {...}
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {...} 
+@media only screen and (min-width: 600px) {
+    ...
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    ...
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    ...
+}
