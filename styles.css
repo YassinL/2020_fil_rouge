@@ -433,14 +433,24 @@ video {
     margin-bottom: 60px;
 }
 
+#projet #allTheGame .jeux1 img {
+    border-radius: 5%;
+    border: 1px solid white;
+}
+
+#projet #allTheGame .jeux2 img {
+    border-radius: 5%;
+    border: 1px solid white;
+}
+
 #projet #allTheGame .jeux1 {
-    background-color: #12477C;
+    background-color: black;
     color: white;
     margin-bottom: 60px;
-    box-shadow: -1em 0 .0em #12477C;
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 2s;
     transition-timing-function: ease;
+    border-radius: 5%;
 }
 
 #projet #allTheGame .jeux1 h3 {
@@ -448,26 +458,34 @@ video {
     justify-content: center;
 }
 
+#projet #allTheGame .jeux1 .good {
+    display: flex;
+    justify-content: center;
+}
+
+#projet #allTheGame .jeux2 #good1 {
+    display: flex;
+    justify-content: center;
+}
+
 #projet #allTheGame .jeux1:hover {
-    background-color: black;
-    box-shadow: -1em 0 .0em black;
-    -webkit-transform: scale(1.25);
+    background-color: #B78F68;
+    -webkit-transform: scale(1.15);
 }
 
 #projet #allTheGame .jeux2 {
-    background-color: #12477C;
+    background-color: black;
     color: white;
     margin-bottom: 60px;
-    box-shadow: -1em 0 .0em #12477C;
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 2s;
     transition-timing-function: ease;
+    border-radius: 5%;
 }
 
 #projet #allTheGame .jeux2:hover {
-    background-color: black;
-    box-shadow: -1em 0 .0em black;
-    -webkit-transform: scale(1.25);
+    background-color: #B78F68;
+    -webkit-transform: scale(1.15);
 }
 
 #projet #allTheGame .jeux2 h3 {
