@@ -696,7 +696,6 @@ footer hr {
 }
 
 #backgroundContainer .titre {
-   
     border: hotpink solid 2px;
 }
 
@@ -707,7 +706,11 @@ footer hr {
 line-height: 22px;
 border: hotpink solid 2px;
 }
-
+#backgroundContainer h1 {
+    
+    font-size: 48px;
+    line-height: 56px;
+}
 #backgroundVideo {
     position: absolute;
     top: 0;
@@ -731,7 +734,6 @@ border: hotpink solid 2px;
 #service p {
     font-size: 20px;
     width: 80%;
-    color: white;
 }
 
 #service span {
@@ -752,25 +754,84 @@ border: hotpink solid 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 50px;
-    border: olive solid 2px;
-    width: 95%;
-    margin: 0 auto;
+    padding-left: 20px;
 }
 
 #service #service2 {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    line-height: 50px;
-    border: olive solid 2px;
-    width: 95%;
-    margin: 0 auto;
+    padding-left: 20px;
 }
 
 #service #service1,
 #service2 ul {
     font-size: 14px;
+}
+/* PARTIE PROJETS */
+
+#projet #allTheGame {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#projet #barre {
+    width: 240px;
+}
+
+#projet h1 {
+    font-size: 24px;
+line-height: 29px;
+}
+
+
+/* PARTIE EQUIPE */
+
+#equipe .groupe .photo .profil {
+    height: 165px;
+    width: 165px;
+}
+
+#equipe .groupe .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: olive 2PX SOLID;
+}
+
+#equipe .groupe .left {
+    padding-left: 20px;
+}
+
+#equipe .groupe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 140px;
+    border: red 2PX SOLID;
+}
+
+#equipe .groupe .photo .deco {
+    border: solid white 1px;
+    padding: 10px 20px;
+}
+
+#equipe .groupe .photo p {
+    margin-top: 20px;
+    color: white;
+}
+
+#equipe {
+    background-color: #white;
+    color: #151515;
+    padding-top: 140px;
+}
+
+#equipe .passion {
+    width: 50px;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 
