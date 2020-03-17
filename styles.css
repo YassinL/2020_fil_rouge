@@ -443,23 +443,15 @@ video {
     transition-timing-function: ease;
 }
 
-#projet #allTheGame .jeux1 img:hover {
-    -webkit-transform: scale(1.25);
-}
-
-#projet #allTheGame .jeux2 img:hover {
-    -webkit-transform: scale(1.25);
-}
-
 #projet #allTheGame .jeux1 h3 {
     display: flex;
     justify-content: center;
 }
 
 #projet #allTheGame .jeux1:hover {
-    transform: translateX(60px);
     background-color: black;
     box-shadow: -1em 0 .0em black;
+    -webkit-transform: scale(1.25);
 }
 
 #projet #allTheGame .jeux2 {
@@ -474,8 +466,8 @@ video {
 
 #projet #allTheGame .jeux2:hover {
     background-color: black;
-    transform: translateX(60px);
     box-shadow: -1em 0 .0em black;
+    -webkit-transform: scale(1.25);
 }
 
 #projet #allTheGame .jeux2 h3 {
