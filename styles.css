@@ -418,14 +418,6 @@ video {
     flex-direction: row;
 }
 
-#projet .jeu1 .jeu2 .jeu3 {
-    height: 225px;
-    width: 225px;
-    border-radius: 100%;
-    display: block;
-    flex-direction: row;
-}
-
 #projet #barre {
     width: 555px;
     margin: 0 auto;
@@ -457,9 +449,9 @@ video {
 }
 
 #projet #allTheGame .jeux1:hover {
-    transform: translateX(60px);
     background-color: black;
     box-shadow: -1em 0 .0em black;
+    -webkit-transform: scale(1.25);
 }
 
 #projet #allTheGame .jeux2 {
@@ -474,8 +466,8 @@ video {
 
 #projet #allTheGame .jeux2:hover {
     background-color: black;
-    transform: translateX(60px);
     box-shadow: -1em 0 .0em black;
+    -webkit-transform: scale(1.25);
 }
 
 #projet #allTheGame .jeux2 h3 {
@@ -677,17 +669,15 @@ footer hr {
 }
 
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-     
+/* Extra small devices (phones, 600px and down) */
 
+@media only screen and (max-width: 600px) {
     body {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         color: #151515;
         overflow-x: hidden;
     }
-    
     section {
         width: 100%;
         margin: 0 auto;
@@ -710,12 +700,7 @@ footer hr {
     border: hotpink solid 2px;
 }
 
-#backgroundContainer h1 {
-   
-    font-size: 48px;
-    line-height: 56px;
-    border: hotpink solid 2px;
-}
+/* Small devices (portrait tablets and large phones, 600px and up) */
 
 #backgroundContainer h2 {
     font-size: 18px;
@@ -732,8 +717,10 @@ border: hotpink solid 2px;
     opacity: 0.7;
 }
 
-#main1 {
-    width: 100%;
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    ...
 }
 /* PARTIE SERVICES */
 
@@ -788,16 +775,8 @@ border: hotpink solid 2px;
 
 
 
- }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {...}
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {...}
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {...}
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {...} 
+@media only screen and (min-width: 1200px) {
+    ...
+}
