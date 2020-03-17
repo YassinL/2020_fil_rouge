@@ -445,7 +445,7 @@ video {
     background-color: #12477C;
     color: white;
     margin-bottom: 60px;
-    box-shadow: -1em 0 .0em black;
+    box-shadow: -1em 0 .0em #12477C;
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -459,13 +459,14 @@ video {
 #projet #allTheGame .jeux1:hover {
     transform: translateX(60px);
     background-color: black;
+    box-shadow: -1em 0 .0em black;
 }
 
 #projet #allTheGame .jeux2 {
     background-color: #12477C;
     color: white;
     margin-bottom: 60px;
-    box-shadow: -1em 0 .0em black;
+    box-shadow: -1em 0 .0em #12477C;
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -474,6 +475,7 @@ video {
 #projet #allTheGame .jeux2:hover {
     background-color: black;
     transform: translateX(60px);
+    box-shadow: -1em 0 .0em black;
 }
 
 #projet #allTheGame .jeux2 h3 {
