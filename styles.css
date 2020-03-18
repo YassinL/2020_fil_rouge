@@ -259,6 +259,8 @@ body {
 h2{
     color: var(--lightColor);
 }
+
+}
 /* PARTIE MAIN */
 
 #backgroundContainer {
@@ -363,7 +365,9 @@ video {
 #service2 ul {
     font-size: 16px;
 }
-
+.groupsvg {
+    fill: #151515; 
+}
 
 /* PARTIE PROJETS */
 
