@@ -255,6 +255,10 @@ html.transition *:after {
 body {
     color: var(--lightColor); 
 }
+
+h2{
+    color: var(--lightColor);
+}
 /* PARTIE MAIN */
 
 #backgroundContainer {
