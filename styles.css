@@ -172,16 +172,9 @@ nav li a:focus,
 
 /* PARTIE TOGGLE */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap');
+
 
 html {
-  width: 100%;
-  height: 100vh;
-
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   background: var(--lightBg);
 
   --lightBtn: #232323;
@@ -197,8 +190,6 @@ html[data-theme='dark'] {
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
   color: var(--lightColor);
 }
 
@@ -208,23 +199,25 @@ input[type=checkbox] {
   visibility: hidden;
 }
 
-label {
+.lol {
   cursor: pointer;
   text-indent: -9999px;
   width: 55px;
   height: 30px;
   background: var(--lightBtn);
-  margin: 0 auto;
+  margin: 0 0 5px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-  position: relative;
+  position: absolute;
+  top: 15px;
+  right: 500px;
 }
 
-label:after {
+.lol:after {
   content: '';
   background: #fff;
   width: 20px;
@@ -238,11 +231,11 @@ label:after {
  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
 }
 
-input:checked + label {
+input:checked + .lol {
   background: #FFBD07;
 }
 
-input:checked + label:after {
+input:checked + .lol:after {
   left: calc(100% - 5px);
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
@@ -262,7 +255,6 @@ html.transition *:after {
 body {
     color: var(--lightColor); 
 }
-
 /* PARTIE MAIN */
 
 #backgroundContainer {
