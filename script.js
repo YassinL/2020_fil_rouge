@@ -1,3 +1,18 @@
-$('body').toggleClass('day-background');
+var checkbox = document.querySelector('input[name=mode]');
 
-$('#cb1').on('click', function() { $('body').toggleClass('day-background'); });
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        })
+
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition');
+            }, 1000)
+        }

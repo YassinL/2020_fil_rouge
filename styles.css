@@ -172,139 +172,96 @@ nav li a:focus,
 
 /* PARTIE TOGGLE */
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap');
+
+html {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  background: var(--lightBg);
+
+  --lightBtn: #232323;
+  --lightBg: #fff;
+  --lightColor: #232323;
+}
+
+html[data-theme='dark'] {
+   background: var(--lightBg);
+  --lightBtn: #FFBD07;
+  --lightBg: #232323;
+  --lightColor: #fff;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--lightColor);
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 55px;
+  height: 30px;
+  background: var(--lightBtn);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+ transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+}
+
+input:checked + label {
+  background: #FFBD07;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms!important;
+  transition-delay: 0!important;
+}
+
 body {
-    background: #25272A;
-    -webkit-transition: background-color 150ms ease-out !important;
-    transition: background-color 150ms ease-out !important;
+    color: var(--lightColor); 
 }
-
-body.day-background {
-    background: rgb(255, 255, 255);
-}
-
-.button-con {
-    cursor: default;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -76px;
-    margin-top: -18px;
-}
-
-#dayIcon {
-    position: relative;
-    width: 26px;
-    height: 26px;
-    top: -3px;
-    margin: 0 7px;
-    fill: #9caec0;
-}
-
-#nightIcon {
-    position: relative;
-    width: 26px;
-    height: 26px;
-    top: -3px;
-    margin: 0 7px;
-    fill: #9caec0;
-}
-
-#dayIcon,
-#nightIcon {
-    cursor: pointer;
-}
-
-.toggle {
-    display: none;
-}
-
-.toggle,
-.toggle:after,
-.toggle:before,
-.toggle *,
-.toggle *:after,
-.toggle *:before,
-.toggle+.toggle-button {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.toggle::-moz-selection,
-.toggle:after::-moz-selection,
-.toggle:before::-moz-selection,
-.toggle *::-moz-selection,
-.toggle *:after::-moz-selection,
-.toggle *:before::-moz-selection,
-.toggle+.toggle-button::-moz-selection {
-    background: none;
-}
-
-.toggle::selection,
-.toggle:after::selection,
-.toggle:before::selection,
-.toggle *::selection,
-.toggle *:after::selection,
-.toggle *:before::selection,
-.toggle+.toggle-button::selection {
-    background: none;
-}
-
-.toggle+.toggle-button {
-    outline: 0;
-    display: inline-block;
-    width: 4em;
-    height: 2em;
-    position: relative;
-    cursor: pointer;
-    border: 2px solid #333;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    z-index: 1;
-}
-
-.toggle+.toggle-button:after,
-.toggle+.toggle-button:before {
-    position: relative;
-    display: block;
-    content: "";
-    width: 50%;
-    height: 100%;
-}
-
-.toggle+.toggle-button:after {
-    left: 0;
-}
-
-.toggle+.toggle-button:before {
-    display: none;
-}
-
-.toggle:checked+.toggle-button:after {
-    left: 50%;
-}
-
-.toggle+.toggle-button {
-    padding: 2px;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    border: 2px solid rgba(156, 174, 192, 0.27);
-    border-radius: 2em;
-}
-
-.toggle+.toggle-button:after {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    background: rgba(156, 174, 192, 0.27);
-    content: "";
-    border-radius: 1em;
-}
-
-.toggle:checked+.toggle-button:after {
-    left: 50%;
-}
-
 
 /* PARTIE MAIN */
 
