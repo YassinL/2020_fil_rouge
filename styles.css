@@ -259,11 +259,6 @@ body {
 h2{
     color: var(--lightColor);
 }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 5b73336a4232905a3e947897c22f5fe084530c36
 /* PARTIE MAIN */
 
 #backgroundContainer {
@@ -332,6 +327,7 @@ video {
     text-align: center;
     width: 70%;
     margin: 0 auto;
+    text-align: justify;
 }
 
 #service span {
@@ -368,9 +364,7 @@ video {
 #service2 ul {
     font-size: 16px;
 }
-.groupsvg {
-    fill: #151515; 
-}
+
 
 /* PARTIE PROJETS */
 
@@ -380,10 +374,10 @@ video {
     flex-direction: row;
 }
 
-#projet #barre {
+#projet hr {
     width: 555px;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid #151515;
     margin-bottom: 100px;
 }
 
@@ -396,23 +390,18 @@ video {
 }
 
 #projet #allTheGame .jeux1 img {
-    border-radius: 5%;
-    border: 1px solid white;
-}
-
-#projet #allTheGame .jeux2 img {
-    border-radius: 5%;
+    border-radius: 3%;
     border: 1px solid white;
 }
 
 #projet #allTheGame .jeux1 {
-    background-color: black;
+    background-color: #151515;
     color: white;
     margin-bottom: 60px;
     transition-property: transform;
     transition-duration: 2s;
     transition-timing-function: ease;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 #projet #allTheGame .jeux1 h3 {
@@ -425,34 +414,9 @@ video {
     justify-content: center;
 }
 
-#projet #allTheGame .jeux2 #good1 {
-    display: flex;
-    justify-content: center;
-}
-
 #projet #allTheGame .jeux1:hover {
     background-color: #B78F68;
     -webkit-transform: scale(1.15);
-}
-
-#projet #allTheGame .jeux2 {
-    background-color: black;
-    color: white;
-    margin-bottom: 60px;
-    transition-property: transform;
-    transition-duration: 2s;
-    transition-timing-function: ease;
-    border-radius: 5%;
-}
-
-#projet #allTheGame .jeux2:hover {
-    background-color: #B78F68;
-    -webkit-transform: scale(1.15);
-}
-
-#projet #allTheGame .jeux2 h3 {
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -566,6 +530,10 @@ form input {
 
 
 /* PARTIE AGENCE */
+#adresse .agence2 iframe {
+    width: 492px;
+    height: 369px;
+}
 
 #adresse {
     padding: 140px 0;
@@ -616,6 +584,10 @@ footer hr {
 }
 
 
+
+
+
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -659,7 +631,7 @@ footer hr {
         overflow-x: hidden;
     }
     section {
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
     }
 /* PARTIE MAIN */
@@ -668,28 +640,19 @@ footer hr {
     position: relative;
     width: 100%;
     height: 96vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #151515;
-    border: hotpink solid 2px;
 }
 
-#backgroundContainer .titre {
-    border: hotpink solid 2px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 
 #backgroundContainer h2 {
     font-size: 18px;
 line-height: 22px;
-border: hotpink solid 2px;
+color: white;
 }
 #backgroundContainer h1 {
-    
+    color: white;
     font-size: 48px;
     line-height: 56px;
+    letter-spacing: 0.1em;
 }
 #backgroundVideo {
     position: absolute;
@@ -700,11 +663,6 @@ border: hotpink solid 2px;
     opacity: 0.7;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-    ...
-}
 /* PARTIE SERVICES */
 
 #service {
@@ -713,7 +671,8 @@ border: hotpink solid 2px;
 
 #service p {
     font-size: 20px;
-    width: 80%;
+    width: 75%;
+    text-align: justify;
 }
 
 #service span {
@@ -756,7 +715,7 @@ border: hotpink solid 2px;
     flex-direction: column;
 }
 
-#projet #barre {
+#projet hr {
     width: 240px;
 }
 
@@ -764,6 +723,27 @@ border: hotpink solid 2px;
     font-size: 24px;
 line-height: 29px;
 }
+
+#projet #allTheGame .jeux1 img {
+    border-radius: 5%;
+    border: 1px solid white;
+}
+
+#projet #allTheGame .jeux1 {
+    color: white;
+    margin-bottom: 60px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    border-radius: 0;
+}
+
+#projet #allTheGame .jeux1 .good {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* PARTIE EQUIPE */
@@ -803,7 +783,7 @@ line-height: 29px;
 }
 
 #equipe {
-    background-color: #white;
+    background-color: white;
     color: #151515;
     padding-top: 140px;
 }
@@ -816,8 +796,105 @@ line-height: 29px;
 
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* PARTIE CONTACTS */
 
-@media only screen and (min-width: 1200px) {
-    ...
+#contact {
+    padding-top: 90px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#contact hr {
+    width: 240px;
+}
+
+form input,
+textarea {
+    width: 320px;
+    height: 10px;
+    background: #F4F1F1;
+    border: #151515 solid 1px;
+    margin: 10px;
+    font-size: 14px;
+    color: #9F9F9F;
+    padding: 30px;
+}
+
+form input {
+    box-shadow: 10px 10px #151515;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: none;
+    box-shadow: 10px 10px #151515;
+}
+
+#contact button {
+    width: 182px;
+    height: 38px;
+    border: #151515 solid 1px;
+    margin-top: 30px;
+}
+
+#contact button:hover {
+    border: #fff 1px solid;
+    background-color: #151515;
+    color: white;
+}
+
+
+/* PARTIE AGENCE */
+
+#adresse {
+    padding: 140px 0;
+}
+
+.agence1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.agence2 h2 {
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.agence2 hr{
+    width: 250px;
+}
+.mailto{
+    text-decoration: none;
+    color: #151515;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.icone img{
+    width: 80px;
+    height: 80px;
+}
+ iframe {
+     display: none;
+ }
+
+  .lol {
+    display: none;
+  }
+  
 }
