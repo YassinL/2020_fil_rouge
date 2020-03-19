@@ -30,6 +30,7 @@
         </nav>
 
     </header>
+
     <section id="top">
     </section>
 
@@ -37,7 +38,7 @@
 
         <div id="backgroundContainer">
             <div class="titre">
-                <h1>Virtual <br> Virus</h1>
+                <h1>Virtual<br>Virus</h1>
 
                 <h2>Spécialisé dans la VR</h2>
             </div>
@@ -57,7 +58,7 @@
     <section id="service">
         <p>Nous avons prévu d'être <span>la meilleure alternative de conception de réalité virtuelle</span>, contribuant à l'évolution, l'efficacité et la productivité de nos clients. <br> <br> Nous serons des innovateurs et des leaders sur le marché de
             la réalité virtuelle en lançant un nouveau jeu qui nous permettra de capter une clientèle hétéroclite pour atteindre nos objectifs et satisfaire les besoins de nos clients.</p>
-        <div id="service1">
+        <div class="service1">
             
             <svg height="100px" viewBox="0 0 496 496" width="100px" xmlns="http://www.w3.org/2000/svg">
                 <g class="groupsvg">
@@ -78,7 +79,7 @@
             </ul>
         </div>
 
-        <div id="service2">
+        <div class="service2">
             <ul>
                 <li>Nous développons sur Mac, Windows, iOs & Android pour APPS & Jeux</li>
                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nesciunt excepturi harum.</li>
@@ -445,10 +446,10 @@
         <h1>CONTACTEZ-NOUS</h1>
         <div class="formulaire">
             <form action="" method="get">
-                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" />
-                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" placeholder="E-mail" />
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-                <button>Envoyer</button>
+                <input name="name" type="text"  placeholder="Nom" required />
+                <input name="email" type="email"  placeholder="E-mail" required />
+                <textarea name="Message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                <button name="submit" type="submit" data-submit="...Sending" >Envoyer</button>
             </form>
 
         </div>
