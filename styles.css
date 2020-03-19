@@ -252,11 +252,11 @@ html.transition *:after {
   transition-delay: 0!important;
 }
 
-html[data-theme="dark"] body {
+html[data-theme="dark"] body{
     color: var(--lightColor); 
 }
 
-html[data-theme="dark"] h2{
+h2{
     color: var(--lightColor);
 }
 /* je suis ici */
@@ -265,6 +265,12 @@ html[data-theme="dark"] .groupsvg {
     fill: var(--lightColor);
     --lightColor: #fff;
   }
+
+html[data-theme="dark"] .testColor {
+    color: var(--lightColor);
+    --lightColor: #fff;
+}
+
 /* PARTIE MAIN */
 
 #backgroundContainer {
