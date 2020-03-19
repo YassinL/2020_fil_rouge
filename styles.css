@@ -467,9 +467,7 @@ video {
 }
 
 #equipe .passion {
-    width: 60px;
-    height: auto;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -578,11 +576,6 @@ form input {
 
 footer a {
     padding: 0 20px;
-}
-
-footer a img {
-    width: 30px;
-    height: 30px;
 }
 
 footer hr {
