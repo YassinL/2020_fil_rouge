@@ -65,7 +65,11 @@ nav li a:focus,
     background-color: #151515;
     color: white;
 }
-
+nav  .no-color:hover,
+nav  .no-color:focus {
+    background-color: transparent;
+    outline: transparent;
+}
 
 /* menu */
 
@@ -181,6 +185,11 @@ html[data-theme="dark"] body {
     color: var(--lightColor);
 }
 
+html[data-theme="dark"] nav  .no-color:hover,
+html[data-theme="dark"] nav  .no-color:focus {
+    background-color: transparent;
+}
+
 html[data-theme="dark"] nav #layer_3 {
     fill: var(--lightColor);
     --lightColor: #fff;
@@ -190,6 +199,7 @@ html[data-theme="dark"] .groupsvg {
     fill: var(--lightColor);
     --lightColor: #fff;
 }
+
 
 html[data-theme="dark"] nav,
 html[data-theme="dark"] nav ul {
@@ -263,11 +273,6 @@ html[data-theme="dark"] #equipe {
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #equipe .passion {
-    fill: var(--lightBg);
-    --lightBg: #151515;
-}
-
 html[data-theme="dark"] #equipe .groupe .photo .deco {
     border: solid #151515 1px;
 }
@@ -302,19 +307,19 @@ html[data-theme="dark"] .lol:after {
 }
 
 html[data-theme="dark"] footer svg.pink:hover {
-    fill: #e71fe7;
+    fill: #F67E7D;
 }
 
 html[data-theme="dark"] footer svg.blue:hover {
-    fill: rgb(28, 106, 252)
+    fill: #6CC3BD;
 }
 
 html[data-theme="dark"] footer svg.darkBlue:hover {
-    fill: rgb(33, 74, 255)
+    fill: #7C7AA1;
 }
 
 html[data-theme="dark"] footer svg.lightBlue:hover {
-    fill: rgb(20, 223, 223)
+    fill: #5A819E;
 }
 
 input[type=checkbox] {
@@ -748,6 +753,10 @@ form input {
 .mailto {
     text-decoration: none;
     color: #151515;
+    transition: 0.5s;
+}
+.mailto:hover {
+    color: #5A819E;
 }
 
 .icone {
@@ -771,24 +780,51 @@ footer svg {
 }
 
 footer svg.pink:hover {
-    fill: #e71fe7;
+    fill: #F67E7D;
 }
 
 footer svg.blue:hover {
-    fill: rgb(28, 106, 252)
+    fill: #6CC3BD;
 }
 
 footer svg.darkBlue:hover {
-    fill: rgb(33, 74, 255)
+    fill: #7C7AA1;
 }
 
 footer svg.lightBlue:hover {
-    fill: rgb(20, 223, 223)
+    fill: #5A819E;
 }
 
 footer hr {
     border: 5px solid #151515;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* GENERAL MEDIA QUERIES
