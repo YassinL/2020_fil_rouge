@@ -658,11 +658,25 @@ form input {
 footer a {
     padding: 0 20px;
 }
+
 footer svg {
     transition: 0.5s;
 }
-footer svg:hover {
-    fill:#292929;
+
+footer svg.pink:hover {
+    fill:#e71fe7;
+}
+
+footer svg.blue:hover {
+    fill: rgb(28, 106, 252)
+}
+
+footer svg.darkBlue:hover {
+    fill: rgb(33, 74, 255)
+}
+
+footer svg.lightBlue:hover {
+    fill: rgb(20, 223, 223)
 }
 
 footer hr {
