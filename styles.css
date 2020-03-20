@@ -30,6 +30,7 @@ section {
 nav #layer_3 {
     margin: 10px 0 0 20px;
     display: inline-block;
+    fill: #151515;
 }
 
 nav {
@@ -180,6 +181,11 @@ html[data-theme="dark"] body {
     color: var(--lightColor);
 }
 
+html[data-theme="dark"] nav #layer_3 {
+    fill: var(--lightColor);
+    --lightColor: #fff;
+}  
+
 html[data-theme="dark"] .groupsvg {
     fill: var(--lightColor);
     --lightColor: #fff;
@@ -268,6 +274,24 @@ html[data-theme="dark"] #contact button:hover {
 html[data-theme="dark"] .lol:after {
     background: #151515;
 }
+
+html[data-theme="dark"] footer svg.pink:hover {
+    fill:#e71fe7;
+}
+
+html[data-theme="dark"] footer svg.blue:hover {
+    fill: rgb(28, 106, 252)
+}
+
+html[data-theme="dark"] footer svg.darkBlue:hover {
+    fill: rgb(33, 74, 255)
+}
+
+html[data-theme="dark"] footer svg.lightBlue:hover {
+    fill: rgb(20, 223, 223)
+}
+
+
 
 input[type=checkbox] {
     height: 0;
@@ -666,8 +690,20 @@ footer svg {
     transition: 0.5s;
 }
 
-footer svg:hover {
-    fill: #292929;
+footer svg.pink:hover {
+    fill:#e71fe7;
+}
+
+footer svg.blue:hover {
+    fill: rgb(28, 106, 252)
+}
+
+footer svg.darkBlue:hover {
+    fill: rgb(33, 74, 255)
+}
+
+footer svg.lightBlue:hover {
+    fill: rgb(20, 223, 223)
 }
 
 footer hr {
