@@ -184,7 +184,7 @@ html[data-theme="dark"] body {
 html[data-theme="dark"] nav #layer_3 {
     fill: var(--lightColor);
     --lightColor: #fff;
-}  
+}
 
 html[data-theme="dark"] .groupsvg {
     fill: var(--lightColor);
@@ -225,7 +225,33 @@ html[data-theme="dark"] #projet #allTheGame .jeux1 {
 }
 
 html[data-theme="dark"] #projet #allTheGame .jeux1:hover {
-    background-color: #B78F68;
+    background-color: #FFC1A8;
+    color: var(--lightColor);
+    --lightColor: #fff;
+}
+
+html[data-theme="dark"] #projet #allTheGame .jeux2 {
+    background-color: var(--lightColor);
+    --lightColor: #fff;
+    color: var(--lightBg);
+    --lightBg: #151515;
+}
+
+html[data-theme="dark"] #projet #allTheGame .jeux2:hover {
+    background-color: #6CC3BD;
+    color: var(--lightColor);
+    --lightColor: #fff;
+}
+
+html[data-theme="dark"] #projet #allTheGame .jeux3 {
+    background-color: var(--lightColor);
+    --lightColor: #fff;
+    color: var(--lightBg);
+    --lightBg: #151515;
+}
+
+html[data-theme="dark"] #projet #allTheGame .jeux3:hover {
+    background-color: #7C7AA1;
     color: var(--lightColor);
     --lightColor: #fff;
 }
@@ -276,7 +302,7 @@ html[data-theme="dark"] .lol:after {
 }
 
 html[data-theme="dark"] footer svg.pink:hover {
-    fill:#e71fe7;
+    fill: #e71fe7;
 }
 
 html[data-theme="dark"] footer svg.blue:hover {
@@ -290,8 +316,6 @@ html[data-theme="dark"] footer svg.darkBlue:hover {
 html[data-theme="dark"] footer svg.lightBlue:hover {
     fill: rgb(20, 223, 223)
 }
-
-
 
 input[type=checkbox] {
     height: 0;
@@ -486,14 +510,60 @@ video {
     cursor: pointer;
 }
 
+#projet #allTheGame .jeux2 {
+    background-color: #151515;
+    color: white;
+    margin-bottom: 60px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    border-radius: 3%;
+    height: 60vh;
+    cursor: pointer;
+}
+
+#projet #allTheGame .jeux3 {
+    background-color: #151515;
+    color: white;
+    margin-bottom: 60px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    border-radius: 3%;
+    height: 60vh;
+    cursor: pointer;
+}
+
 #projet #allTheGame .jeux1 h3,
-#projet #allTheGame .jeux1 .good {
+#projet #allTheGame .jeux1 p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#projet #allTheGame .jeux2 h3,
+#projet #allTheGame .jeux2 p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#projet #allTheGame .jeux3 h3,
+#projet #allTheGame .jeux3 p {
     text-align: center;
     padding-top: 10px;
 }
 
 #projet #allTheGame .jeux1:hover {
-    background-color: #B78F68;
+    background-color: #FFC1A8;
+    transform: scale(1.1);
+}
+
+#projet #allTheGame .jeux2:hover {
+    background-color: #6CC3BD;
+    transform: scale(1.1);
+}
+
+#projet #allTheGame .jeux3:hover {
+    background-color: #7C7AA1;
     transform: scale(1.1);
 }
 
@@ -691,7 +761,7 @@ footer svg {
 }
 
 footer svg.pink:hover {
-    fill:#e71fe7;
+    fill: #e71fe7;
 }
 
 footer svg.blue:hover {
