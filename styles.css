@@ -498,6 +498,16 @@ video {
     border: 1px solid white;
 }
 
+#projet #allTheGame .jeux2 img {
+    border-radius: 3%;
+    border: 1px solid white;
+}
+
+#projet #allTheGame .jeux3 img {
+    border-radius: 3%;
+    border: 1px solid white;
+}
+
 #projet #allTheGame .jeux1 {
     background-color: #151515;
     color: white;
