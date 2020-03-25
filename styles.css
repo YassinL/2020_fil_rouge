@@ -1081,3 +1081,130 @@ footer hr {
     }
 
 }
+
+
+/* Responsive (Ipad 768x1024) */
+    
+@media screen and (max-width: 1024px) {
+    body {
+        width: 768px;
+    }
+    nav {
+        width: 768px;
+    }
+    .lol {
+        display: none;
+    }
+    #service p {
+        font-size: 25px;
+    }
+    #service .service1 ul {
+        margin-left: 40px;
+        font-size: 20px
+    }
+    #service .service2 ul {
+        font-size: 20px
+    }
+    #backgroundContainer h1 {
+        color: white;
+        font-size: 78px;
+        line-height: 56px;
+        letter-spacing: 0.1em;
+        position: relative;
+        bottom: 300px;
+    }
+    #backgroundContainer h2 {
+        font-size: 38px;
+        line-height: 22px;
+        color: white;
+        position: relative;
+        bottom: 300px;
+    }
+    #projet #allTheGame .jeux1:hover,
+    #projet #allTheGame .jeux2:hover,
+    #projet #allTheGame .jeux3:hover {
+        transform: none;
+    }
+    #projet #allTheGame {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #projet hr {
+        width: 540px;
+        border: 1px solid black;
+    }
+    #projet h1 {
+        font-size: 44px;
+        line-height: 29px;
+    }
+    #projet #allTheGame .jeux1 img,
+    #projet #allTheGame .jeux2 img,
+    #projet #allTheGame .jeux3 img {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #projet #allTheGame .jeux1,
+    #projet #allTheGame .jeux2,
+    #projet #allTheGame .jeux3 {
+        width: 70%;
+        height: 65vh;
+    }
+    #projet #allTheGame .jeux1 {
+        background-color: #FFC1A8;
+    }
+    #projet #allTheGame .jeux2 {
+        background-color: #6CC3BD;
+    }
+    #projet #allTheGame .jeux3 {
+        background-color: #7C7AA1;
+    }
+    #projet #allTheGame .jeux1:hover,
+    #projet #allTheGame .jeux2:hover,
+    #projet #allTheGame .jeux3:hover {
+        transform: none;
+    }
+    #equipe .groupe {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #equipe .groupe .photo .profil {
+        height: 165px;
+        width: 165px;
+    }
+    #equipe .groupe .photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+    #equipe .groupe .left {
+        padding-left: 0;
+    }
+    #equipe .groupe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+    #equipe .groupe .photo p {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    #equipe .passion {
+        width: 50px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    #contact .barre_contact {
+        border: 1px solid black;
+    }
+    #adresse hr {
+        border: 1px solid black;
+    }
+    #adresse .agence1 .plan_contact {
+        margin-left: 40px;
+    }
+}
