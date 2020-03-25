@@ -498,19 +498,22 @@ video {
     padding-top: 60px;
 }
 
-#projet #allTheGame .jeux1 img {
+#projet #allTheGame .jeux1 a img {
     border-radius: 3%;
     border-bottom: white solid 1px;
+    width: 100%;
 }
 
-#projet #allTheGame .jeux2 img {
+#projet #allTheGame .jeux2 a img {
     border-radius: 3%;
    border-bottom: white solid 1px;
+   width: 100%;
 }
 
-#projet #allTheGame .jeux3 img {
+#projet #allTheGame .jeux3 a img {
     border-radius: 3%;
     border-bottom: white solid 1px;
+    width: 100%;
 }
 
 #projet #allTheGame .jeux1 {
@@ -1092,7 +1095,12 @@ footer hr {
     nav {
         width: 768px;
     }
-    .lol {
+
+    .section_video_container {
+        height: 420px;
+    }
+
+    .switch_label {
         display: none;
     }
     #service p {
