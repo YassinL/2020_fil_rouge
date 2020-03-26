@@ -12,7 +12,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #151515;
-    overflow-x: hidden;
 }
 
 section {
@@ -83,7 +82,7 @@ nav  .menu_icon_link:focus {
 }
 
 
-/* menu icon */
+/* menu icons */
 
 .menu__icon {
     cursor: pointer;
@@ -194,6 +193,17 @@ html[data-theme="dark"] nav .menu_icon_link_logo {
     fill: var(--lightColor);
     --lightColor: #fff;
 }
+html[data-theme="dark"] .hamburger {
+    background: #fff;
+}
+html[data-theme="dark"] .hamburger:before,
+html[data-theme="dark"] .hamburger:after {
+    background: #fff;
+}
+
+html[data-theme="dark"] .menu__checkbox:checked~.menu__icon {
+    background-color: #151515;
+}
 
 html[data-theme="dark"] .section_socialmedia_svg{
     fill: var(--lightColor);
@@ -303,6 +313,10 @@ html[data-theme="dark"] #section_contact form button:hover {
     border: #151515 1px solid;
     background-color: white;
     color: #151515;
+}
+html[data-theme="dark"] #section_contact form input:focus,
+html[data-theme="dark"] #section_contact form textarea:focus {
+    background: white;
 }
 
 html[data-theme="dark"] .switch_label:after {
@@ -640,7 +654,6 @@ video {
 
 #section_equipe .equipe_member_svg {
     padding-bottom: 20px;
-    fill: white;
 }
 
 #section_equipe svg {
@@ -700,6 +713,10 @@ video {
     font-size: 14px;
     color: #9F9F9F;
     padding: 30px;
+}
+#section_contact form input:focus,
+#section_contact form textarea:focus {
+    background: #151515;
 }
 
 #section_contact form input {
@@ -875,12 +892,13 @@ footer hr {
 }
 
 
-/* PHONE */
+                                /* PARTIE PHONE PORTRAIT */
 
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 700px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
 
     body {
         font-family: 'Montserrat', sans-serif;
@@ -1102,7 +1120,248 @@ footer hr {
 
 
 
-/* Responsive (Ipad 768x1024) */
+
+
+
+                                /* PARTIE PHONE LANDSCAPE */
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #151515;
+        overflow-x: hidden;
+    }
+    section {
+        width: 95%;
+        margin: 0 auto;
+    }
+    /* PARTIE MAIN */
+    .section_video_container{
+        position: relative;
+        width: 100%;
+        height: 96vh;
+    }
+    .section_video_container h2 {
+        font-size: 18px;
+        line-height: 22px;
+        color: white;
+    }
+    .section_video_container h1 {
+        color: white;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0.1em;
+    }
+    .section_video_container_sources {
+        width: 100%;
+        height: 96vh;
+    }
+    /* PARTIE SERVICES */
+    #section_service {
+        padding: 140px 0 140px 0;
+    }
+    #section_service p {
+        font-size: 16px;
+    }
+
+    #section_service .section_service_container1 {
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #section_service .section_service_container2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #section_service .section_service_container1 ul,
+    .section_service_container2 ul {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+
+    /* PARTIE PROJETS */
+    #section_projet {
+        height: 310vh;
+    }
+    #section_projet .section_projet_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 260vh;
+    }
+    #section_projet hr {
+        width: 240px;
+    }
+    #section_projet h1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+  
+
+#section_projet .section_projet_container .section_projet_container_card1 a img,
+#section_projet .section_projet_container .section_projet_container_card2 a img,
+#section_projet .section_projet_container .section_projet_container_card3 a img {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 50vh;
+}
+
+#section_projet .section_projet_container .section_projet_container_card1 ,
+#section_projet .section_projet_container .section_projet_container_card2,
+#section_projet .section_projet_container .section_projet_container_card3  {
+    width: 60%;
+    height: 90vh;
+}
+
+#section_projet .section_projet_container .section_projet_container_card1 {
+    background-color: #FFC1A8;
+}
+
+#section_projet .section_projet_container .section_projet_container_card2 {
+    background-color: #6CC3BD;
+}
+
+#section_projet .section_projet_container .section_projet_container_card3 {
+    background-color: #7C7AA1;
+}
+
+
+#section_projet .section_projet_container .section_projet_container_card1:hover,
+#section_projet .section_projet_container .section_projet_container_card2:hover,
+#section_projet .section_projet_container .section_projet_container_card3:hover {
+    transform: none;
+}
+
+    /* PARTIE EQUIPE */
+    #section_equipe .section_equipe_container .equipe_container_member .equipe_member_photo{
+        height: 165px;
+        width: 165px;
+    }
+    #section_equipe .section_equipe_container .equipe_container_member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+    #section_equipe .section_equipe_container .left {
+        padding-left: 0;
+    }
+    #section_equipe .section_equipe_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+    
+    #section_equipe .section_equipe_container .equipe_container_member p {
+        margin-top: 20px;
+    }
+    #section_equipe .equipe_member_svg {
+        width: 50px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+
+    /* PARTIE CONTACTS */
+    #section_contact {
+        padding-top: 90px;
+    }
+
+    #section_contact h1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    #section_contact hr {
+        width: 240px;
+    }
+    #section_contact form input {
+        width: 320px;
+        height: 10px;
+        background: white;
+        border-radius: initial;
+    }
+    #section_contact form input {
+        box-shadow: 10px 10px #151515;
+    }
+    #section_contact form textarea {
+        width: 320px;
+        background: white;
+        border-radius: initial;
+    }
+    #section_contact button[type="submit"] {
+        border: #fff 1px solid;
+        background-color: #151515;
+        color: white;
+        transition: 0;
+    }
+    
+    /* PARTIE AGENCE */
+    #section_adress {
+        padding: 140px 0;
+    }
+    .section_adress_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .adress_container_informations h2 {
+        padding: 30px 0;
+        font-size: 20px;
+    }
+    .adress_container_informations p {
+        font-size: 12px;
+    }
+    .adress_container_informations hr {
+        width: 250px;
+    }
+    
+    iframe {
+        display: none;
+    }
+    
+    footer svg {
+        transition: 0;
+    }
+    
+    footer svg.instagram{
+        fill: #F67E7D;
+    }
+    
+    footer svg.facebook {
+        fill: #6CC3BD;
+    }
+    
+    footer svg.linkedin {
+        fill: #7C7AA1;
+    }
+    
+    footer svg.twitter{
+        fill: #5A819E;
+    }
+    
+    .switch_label {
+        display: none;
+    }
+
+}
+
+                                /* PARTIE IPAD PORTRAIT */
+
     
 @media only screen 
   and (min-device-width: 768px) 
@@ -1306,9 +1565,14 @@ footer hr {
 
 }
 
+
+                                /* PARTIE IPAD LANDSCAPE */
+
+
+
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+  and (max-device-width: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -1539,10 +1803,13 @@ footer hr {
     footer svg.twitter{
         fill: #5A819E;
     }
-    
-
-
 }
+
+
+
+
+                                /* PARTIE GRAND PC */
+
 
 @media screen 
   and (min-device-width: 1500px) 
@@ -1553,5 +1820,68 @@ footer hr {
         font-size: 20px;
         width: 80%;
     }
+
+/* PARTIE PROJETS */
+
+    #section_projet .section_projet_container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #section_projet .section_projet_container .section_projet_container_card1,
+    #section_projet .section_projet_container .section_projet_container_card2,
+    #section_projet .section_projet_container .section_projet_container_card3 {
+        height: 60vh;
+    }
+       
+    
+    #section_projet .section_projet_container .section_projet_container_card1 h3,
+    #section_projet .section_projet_container .section_projet_container_card1 p {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #section_projet .section_projet_container .section_projet_container_card2 h3,
+    #section_projet .section_projet_container .section_projet_container_card2 p {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #section_projet .section_projet_container .section_projet_container_card3 h3,
+    #section_projet .section_projet_container .section_projet_container_card3 p {
+        text-align: center;
+        padding-top: 20px;
+    }
+    /* PARTIE EQUIPE */
+
+#section_equipe .section_equipe_container .equipe_container_member .equipe_member_photo {
+    height: 250px;
+    width: 250px;
+}
+
+#section_equipe .section_equipe_container .left {
+    padding-left: 0px;
+}
+
+#section_equipe .section_equipe_container {
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* PARTIE CONTACTS */
+
+#section_contact form input,
+#section_contact form textarea {
+    width: 500px;
+}
+
+/* PARTIE AGENCE */
+
+
+.section_adress_container {
+    justify-content: space-around;
+}
 
 }
