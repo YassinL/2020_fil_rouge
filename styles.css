@@ -195,7 +195,7 @@ html[data-theme="dark"] nav .menu_icon_link_logo {
     --lightColor: #fff;
 }
 
-html[data-theme="dark"] .svg_icons {
+html[data-theme="dark"] .section_socialmedia_svg{
     fill: var(--lightColor);
     --lightColor: #fff;
 }
@@ -273,30 +273,30 @@ html[data-theme="dark"] #section_equipe {
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #section_equipe .groupe .photo .deco {
+html[data-theme="dark"] #section_equipe .section_equipe_container .equipe_container_member .equipe_member_decoration {
     border: solid #151515 1px;
 }
 
-html[data-theme="dark"] form input {
+html[data-theme="dark"] #section_contact form input {
     box-shadow: 10px 10px white;
     color: var(--lightBg);
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #contact textarea {
+html[data-theme="dark"] #section_contact form textarea {
     box-shadow: 10px 10px white;
     color: var(--lightBg);
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #contact button {
+html[data-theme="dark"] #section_contact form button {
     border: white 1px solid;
     background-color: #151515;
     color: white;
     transition: 0.5s;
 }
 
-html[data-theme="dark"] #contact button:hover {
+html[data-theme="dark"] #section_contact form button:hover {
     border: #151515 1px solid;
     background-color: white;
     color: #151515;
@@ -306,19 +306,19 @@ html[data-theme="dark"] .switch_label:after {
     background: #151515;
 }
 
-html[data-theme="dark"] footer svg.pink:hover {
+html[data-theme="dark"] footer svg.instagram:hover {
     fill: #F67E7D;
 }
 
-html[data-theme="dark"] footer svg.blue:hover {
+html[data-theme="dark"] footer svg.facebook:hover {
     fill: #6CC3BD;
 }
 
-html[data-theme="dark"] footer svg.darkBlue:hover {
+html[data-theme="dark"] footer svg.linkedin:hover {
     fill: #7C7AA1;
 }
 
-html[data-theme="dark"] footer svg.lightBlue:hover {
+html[data-theme="dark"] footer svg.twitter:hover {
     fill: #5A819E;
 }
 
@@ -589,34 +589,34 @@ video {
 
 /* PARTIE EQUIPE */
 
-#section_equipe .groupe .photo .profil {
+#section_equipe .section_equipe_container .equipe_container_member .equipe_member_photo {
     height: 225px;
     width: 225px;
     border-radius: 100%;
 }
 
-#section_equipe .groupe .photo {
+#section_equipe .section_equipe_container .equipe_container_member {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#section_equipe .groupe .left {
+#section_equipe .section_equipe_container .left {
     padding-left: 60px;
 }
 
-#section_equipe .groupe {
+#section_equipe .section_equipe_container {
     display: flex;
     justify-content: center;
     padding-bottom: 140px;
 }
 
-#section_equipe .groupe .photo .deco {
+#section_equipe .section_equipe_container .equipe_container_member .equipe_member_decoration {
     border: solid white 1px;
     padding: 10px 20px;
 }
 
-#section_equipe .groupe .photo p {
+#section_equipe .section_equipe_container .equipe_container_member p {
     margin-top: 20px;
 }
 
@@ -627,7 +627,7 @@ video {
     padding-top: 140px;
 }
 
-#section_equipe .passion {
+#section_equipe .equipe_member_svg {
     padding-bottom: 20px;
     fill: white;
 }
@@ -656,31 +656,31 @@ video {
 
 /* PARTIE CONTACTS */
 
-#contact {
+#section_contact {
     padding-top: 90px;
 }
 
-#contact form {
+#section_contact form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#contact h1 {
+#section_contact h1 {
     text-align: center;
     padding-bottom: 80px;
     font-size: 36px;
     padding-top: 60px;
 }
 
-#contact hr {
+#section_contact hr {
     width: 555px;
     margin: 0 auto;
 }
 
-form input,
-textarea {
+#section_contact form input,
+#section_contact form textarea {
     width: 400px;
     height: 10px;
     background: #F4F1F1;
@@ -691,17 +691,17 @@ textarea {
     padding: 30px;
 }
 
-form input {
+#section_contact form input {
     box-shadow: 10px 10px #151515;
 }
 
-#contact textarea {
+#section_contact form  textarea {
     height: 150px;
     resize: none;
     box-shadow: 10px 10px #151515;
 }
 
-#contact button[type="submit"] {
+#section_contact button[type="submit"] {
     width: 182px;
     height: 38px;
     border: #151515 solid 1px;
@@ -710,7 +710,7 @@ form input {
     transition: 0.5s;
 }
 
-#contact button[type="submit"]:hover {
+#section_contact button[type="submit"]:hover {
     border: #fff 1px solid;
     background-color: #151515;
     color: white;
@@ -719,7 +719,7 @@ form input {
 
 /* PARTIE AGENCE */
 
-#adresse svg {
+#section_adress svg {
     animation-name: colorful;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -740,16 +740,16 @@ form input {
     }
 }
 
-#adresse {
+#section_adress {
     padding: 140px 0;
 }
 
-.agence1 {
+.section_adress_container {
     display: flex;
     justify-content: space-between;
 }
 
-.agence2 h2 {
+.adress_container_informations h2 {
     padding: 30px 0;
     font-size: 24px;
 }
@@ -763,13 +763,13 @@ form input {
     color: #5A819E;
 }
 
-.icone {
+.adress_informations_svg {
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
 
-.reseaux {
+.section_socialmedia {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
@@ -783,19 +783,19 @@ footer svg {
     transition: 0.5s;
 }
 
-footer svg.pink:hover {
+footer svg.instagram:hover {
     fill: #F67E7D;
 }
 
-footer svg.blue:hover {
+footer svg.facebook:hover {
     fill: #6CC3BD;
 }
 
-footer svg.darkBlue:hover {
+footer svg.linkedin:hover {
     fill: #7C7AA1;
 }
 
-footer svg.lightBlue:hover {
+footer svg.twitter:hover {
     fill: #5A819E;
 }
 
@@ -975,30 +975,30 @@ footer hr {
 }
 
     /* PARTIE EQUIPE */
-    #section_equipe .groupe .photo .profil {
+    #section_equipe .section_equipe_container .equipe_container_member .equipe_member_photo{
         height: 165px;
         width: 165px;
     }
-    #section_equipe .groupe .photo {
+    #section_equipe .section_equipe_container .equipe_container_member {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 70px;
     }
-    #section_equipe .groupe .left {
+    #section_equipe .section_equipe_container .left {
         padding-left: 0;
     }
-    #section_equipe .groupe {
+    #section_equipe .section_equipe_container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 70px;
     }
     
-    #section_equipe .groupe .photo p {
+    #section_equipe .section_equipe_container .equipe_container_member p {
         margin-top: 20px;
     }
-    #section_equipe .passion {
+    #section_equipe .equipe_member_svg {
         width: 50px;
         height: auto;
         padding-bottom: 20px;
@@ -1006,32 +1006,32 @@ footer hr {
 
 
     /* PARTIE CONTACTS */
-    #contact {
+    #section_contact {
         padding-top: 90px;
     }
 
-    #contact h1 {
+    #section_contact h1 {
         font-size: 24px;
         line-height: 29px;
     }
-    #contact hr {
+    #section_contact hr {
         width: 240px;
     }
-    form input {
+    #section_contact form input {
         width: 320px;
         height: 10px;
         background: white;
         border-radius: initial;
     }
-    form input {
+    #section_contact form input {
         box-shadow: 10px 10px #151515;
     }
-    #contact textarea {
+    #section_contact textarea {
         width: 320px;
         background: white;
         border-radius: initial;
     }
-    #contact button[type="submit"] {
+    #section_contact button[type="submit"] {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
@@ -1039,19 +1039,19 @@ footer hr {
     }
     
     /* PARTIE AGENCE */
-    #adresse {
+    #section_adress {
         padding: 140px 0;
     }
-    .agence1 {
+    .section_adress_container {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
-    .agence2 h2 {
+    .adress_container_informations h2 {
         padding: 30px 0;
         font-size: 20px;
     }
-    .agence2 hr {
+    .adress_container_informations hr {
         width: 250px;
     }
     
@@ -1063,19 +1063,19 @@ footer hr {
         transition: 0;
     }
     
-    footer svg.pink {
+    footer svg.instagram{
         fill: #F67E7D;
     }
     
-    footer svg.blue {
+    footer svg.facebook {
         fill: #6CC3BD;
     }
     
-    footer svg.darkBlue {
+    footer svg.linkedin {
         fill: #7C7AA1;
     }
     
-    footer svg.lightBlue{
+    footer svg.twitter{
         fill: #5A819E;
     }
     
@@ -1173,46 +1173,46 @@ footer hr {
     #section_projet .section_projet_container .section_projet_container_card3:hover {
         transform: none;
     }
-    #section_equipe .groupe {
+    #section_equipe .section_equipe_container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    #section_equipe .groupe .photo .profil {
+    #section_equipe .section_equipe_container .equipe_container_member .equipe_member_photo {
         height: 165px;
         width: 165px;
     }
-    #section_equipe .groupe .photo {
+    #section_equipe .section_equipe_container .equipe_container_member {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 70px;
     }
-    #section_equipe .groupe .left {
+    #section_equipe .section_equipe_container .left {
         padding-left: 0;
     }
-    #section_equipe .groupe {
+    #section_equipe .section_equipe_container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 70px;
     }
-    #section_equipe .groupe .photo p {
+    #section_equipe .section_equipe_container .equipe_container_member p {
         margin-top: 20px;
         font-size: 20px;
     }
-    #section_equipe .passion {
+    #section_equipe .equipe_member_svg {
         width: 50px;
         height: auto;
         padding-bottom: 20px;
     }
-    #contact .barre_contact {
+    #section_contact .section_contact_bar{
         border: 1px solid black;
     }
-    #adresse hr {
+    #section_adress hr {
         border: 1px solid black;
     }
-    #adresse .agence1 .plan_contact {
+    #section_adress .section_adress_container .plan_contact {
         margin-left: 40px;
     }
 }
