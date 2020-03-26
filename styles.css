@@ -195,7 +195,7 @@ html[data-theme="dark"] nav .menu_icon_link_logo {
     --lightColor: #fff;
 }
 
-html[data-theme="dark"] .groupsvg {
+html[data-theme="dark"] .svg_icons {
     fill: var(--lightColor);
     --lightColor: #fff;
 }
@@ -227,53 +227,53 @@ html[data-theme="dark"] nav {
     box-shadow: 1px 1px 4px 0 rgba(231, 219, 219, 0.363);
 }
 
-html[data-theme="dark"] #projet #allTheGame .jeux1 {
+html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card1 {
     background-color: var(--lightColor);
     --lightColor: #fff;
     color: var(--lightBg);
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #projet #allTheGame .jeux1:hover {
+html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card1:hover {
     background-color: #FFC1A8;
     color: var(--lightColor);
     --lightColor: #fff;
 }
 
-html[data-theme="dark"] #projet #allTheGame .jeux2 {
+html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card2 {
     background-color: var(--lightColor);
     --lightColor: #fff;
     color: var(--lightBg);
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #projet #allTheGame .jeux2:hover {
+html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card2:hover {
     background-color: #6CC3BD;
     color: var(--lightColor);
     --lightColor: #fff;
 }
 
-html[data-theme="dark"] #projet #allTheGame .jeux3 {
+html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card3 {
     background-color: var(--lightColor);
     --lightColor: #fff;
     color: var(--lightBg);
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #projet #allTheGame .jeux3:hover {
+html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card3:hover {
     background-color: #7C7AA1;
     color: var(--lightColor);
     --lightColor: #fff;
 }
 
-html[data-theme="dark"] #equipe {
+html[data-theme="dark"] #section_equipe {
     background-color: var(--lightColor);
     --lightColor: #fff;
     color: var(--lightBg);
     --lightBg: #151515;
 }
 
-html[data-theme="dark"] #equipe .groupe .photo .deco {
+html[data-theme="dark"] #section_equipe .groupe .photo .deco {
     border: solid #151515 1px;
 }
 
@@ -395,7 +395,7 @@ html.transition *:after {
     background-color: #151515;
 }
 
-.section_video_container .titre {
+.section_video_container .section_video_container_titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -422,7 +422,7 @@ html.transition *:after {
     letter-spacing: -0.02em;
 }
 
-#backgroundVideo {
+.section_video_container_sources {
     position: absolute;
     top: 0;
     left: 0;
@@ -441,11 +441,11 @@ video {
 
 /* PARTIE SERVICES */
 
-#service {
+#section_service {
     padding: 140px 0 140px 0;
 }
 
-#service p {
+#section_service p {
     font-size: 20px;
     text-align: center;
     width: 70%;
@@ -453,11 +453,11 @@ video {
     text-align: justify;
 }
 
-#service span {
+#section_service span {
     text-decoration: underline;
 }
 
-#service .service1 {
+#section_service .section_service_container1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -465,7 +465,7 @@ video {
     line-height: 50px;
 }
 
-#service .service2 {
+#section_service .section_service_container2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -473,50 +473,50 @@ video {
     line-height: 50px;
 }
 
-#service .service1,
-.service2 ul {
+#section_service .section_service_container1,
+.section_service_container2 ul {
     font-size: 16px;
 }
 
 
 /* PARTIE PROJETS */
 
-#projet #allTheGame {
+#section_projet .section_projet_container {
     display: flex;
     justify-content: space-between;
 }
 
-#projet hr {
+#section_projet hr {
     width: 555px;
     margin: 0 auto;
 }
 
-#projet h1 {
+#section_projet h1 {
     text-align: center;
     padding-bottom: 80px;
     font-size: 36px;
     padding-top: 60px;
 }
 
-#projet #allTheGame .jeux1 a img {
+#section_projet .section_projet_container .section_projet_container_card1 a img {
     border-radius: 3%;
     border-bottom: white solid 1px;
     width: 100%;
 }
 
-#projet #allTheGame .jeux2 a img {
+#section_projet .section_projet_container .section_projet_container_card2 a img {
     border-radius: 3%;
    border-bottom: white solid 1px;
    width: 100%;
 }
 
-#projet #allTheGame .jeux3 a img {
+#section_projet .section_projet_container .section_projet_container_card3 a img {
     border-radius: 3%;
     border-bottom: white solid 1px;
     width: 100%;
 }
 
-#projet #allTheGame .jeux1 {
+#section_projet .section_projet_container .section_projet_container_card1 {
     background-color: #151515;
     color: white;
     margin-bottom: 60px;
@@ -529,7 +529,7 @@ video {
     border: 1px solid white;
 }
 
-#projet #allTheGame .jeux2 {
+#section_projet .section_projet_container .section_projet_container_card2 {
     background-color: #151515;
     color: white;
     margin-bottom: 60px;
@@ -541,7 +541,7 @@ video {
     cursor: pointer;
 }
 
-#projet #allTheGame .jeux3 {
+#section_projet .section_projet_container .section_projet_container_card3 {
     background-color: #151515;
     color: white;
     margin-bottom: 60px;
@@ -553,35 +553,35 @@ video {
     cursor: pointer;
 }
 
-#projet #allTheGame .jeux1 h3,
-#projet #allTheGame .jeux1 p {
+#section_projet .section_projet_container .section_projet_container_card1 h3,
+#section_projet .section_projet_container .section_projet_container_card1 p {
     text-align: center;
     padding-top: 10px;
 }
 
-#projet #allTheGame .jeux2 h3,
-#projet #allTheGame .jeux2 p {
+#section_projet .section_projet_container .section_projet_container_card2 h3,
+#section_projet .section_projet_container .section_projet_container_card2 p {
     text-align: center;
     padding-top: 10px;
 }
 
-#projet #allTheGame .jeux3 h3,
-#projet #allTheGame .jeux3 p {
+#section_projet .section_projet_container .section_projet_container_card3 h3,
+#section_projet .section_projet_container .section_projet_container_card3 p {
     text-align: center;
     padding-top: 10px;
 }
 
-#projet #allTheGame .jeux1:hover {
+#section_projet .section_projet_container .section_projet_container_card1:hover {
     background-color: #FFC1A8;
     transform: scale(1.1);
 }
 
-#projet #allTheGame .jeux2:hover {
+#section_projet .section_projet_container .section_projet_container_card2:hover {
     background-color: #6CC3BD;
     transform: scale(1.1);
 }
 
-#projet #allTheGame .jeux3:hover {
+#section_projet .section_projet_container .section_projet_container_card3:hover {
     background-color: #7C7AA1;
     transform: scale(1.1);
 }
@@ -589,50 +589,50 @@ video {
 
 /* PARTIE EQUIPE */
 
-#equipe .groupe .photo .profil {
+#section_equipe .groupe .photo .profil {
     height: 225px;
     width: 225px;
     border-radius: 100%;
 }
 
-#equipe .groupe .photo {
+#section_equipe .groupe .photo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#equipe .groupe .left {
+#section_equipe .groupe .left {
     padding-left: 60px;
 }
 
-#equipe .groupe {
+#section_equipe .groupe {
     display: flex;
     justify-content: center;
     padding-bottom: 140px;
 }
 
-#equipe .groupe .photo .deco {
+#section_equipe .groupe .photo .deco {
     border: solid white 1px;
     padding: 10px 20px;
 }
 
-#equipe .groupe .photo p {
+#section_equipe .groupe .photo p {
     margin-top: 20px;
 }
 
-#equipe {
+#section_equipe {
     background-color: #151515;
     color: #fff;
     width: 100%;
     padding-top: 140px;
 }
 
-#equipe .passion {
+#section_equipe .passion {
     padding-bottom: 20px;
     fill: white;
 }
 
-#equipe svg {
+#section_equipe svg {
     animation-name: equipe;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -866,7 +866,7 @@ footer hr {
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
@@ -894,111 +894,111 @@ footer hr {
         line-height: 56px;
         letter-spacing: 0.1em;
     }
-    #backgroundVideo {
+    .section_video_container_sources {
         width: auto;
         height: 96vh;
     }
     /* PARTIE SERVICES */
-    #service {
+    #section_service {
         padding: 140px 0 140px 0;
     }
-    #service p {
+    #section_service p {
         font-size: 20px;
         width: 75%;
         text-align: justify;
     }
 
-    #service .service1 {
+    #section_service .section_service_container1 {
         flex-direction: column;
         justify-content: center;
         padding-left: 20px;
     }
-    #service .service2 {
+    #section_service .section_service_container2 {
         flex-direction: column-reverse;
         justify-content: center;
         padding-left: 20px;
     }
-    #service .service1 ul,
-    .service2 ul {
+    #section_service .section_service_container1 ul,
+    .section_service_container2 ul {
         font-size: 14px;
         padding-top: 40px;
     }
 
 
     /* PARTIE PROJETS */
-    #projet #allTheGame {
+    #section_projet .section_projet_container {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    #projet hr {
+    #section_projet hr {
         width: 240px;
     }
-    #projet h1 {
+    #section_projet h1 {
         font-size: 24px;
         line-height: 29px;
     }
   
 
-#projet #allTheGame .jeux1 img,
-#projet #allTheGame .jeux2 img,
-#projet #allTheGame .jeux3 img {
+#section_projet .section_projet_container .section_projet_container_card1 img,
+#section_projet .section_projet_container .section_projet_container_card2 img,
+#section_projet .section_projet_container .section_projet_container_card3 img {
     width: 100%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-#projet #allTheGame .jeux1 ,
-#projet #allTheGame .jeux2,
-#projet #allTheGame .jeux3  {
+#section_projet .section_projet_container .section_projet_container_card1 ,
+#section_projet .section_projet_container .section_projet_container_card2,
+#section_projet .section_projet_container .section_projet_container_card3  {
     width: 90%;
     height: 65vh;
 }
 
-#projet #allTheGame .jeux1 {
+#section_projet .section_projet_container .section_projet_container_card1 {
     background-color: #FFC1A8;
 }
 
-#projet #allTheGame .jeux2 {
+#section_projet .section_projet_container .section_projet_container_card2 {
     background-color: #6CC3BD;
 }
 
-#projet #allTheGame .jeux3 {
+#section_projet .section_projet_container .section_projet_container_card3 {
     background-color: #7C7AA1;
 }
 
 
-#projet #allTheGame .jeux1:hover,
-#projet #allTheGame .jeux2:hover,
-#projet #allTheGame .jeux3:hover {
+#section_projet .section_projet_container .section_projet_container_card1:hover,
+#section_projet .section_projet_container .section_projet_container_card2:hover,
+#section_projet .section_projet_container .section_projet_container_card3:hover {
     transform: none;
 }
 
     /* PARTIE EQUIPE */
-    #equipe .groupe .photo .profil {
+    #section_equipe .groupe .photo .profil {
         height: 165px;
         width: 165px;
     }
-    #equipe .groupe .photo {
+    #section_equipe .groupe .photo {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 70px;
     }
-    #equipe .groupe .left {
+    #section_equipe .groupe .left {
         padding-left: 0;
     }
-    #equipe .groupe {
+    #section_equipe .groupe {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 70px;
     }
     
-    #equipe .groupe .photo p {
+    #section_equipe .groupe .photo p {
         margin-top: 20px;
     }
-    #equipe .passion {
+    #section_equipe .passion {
         width: 50px;
         height: auto;
         padding-bottom: 20px;
@@ -1103,14 +1103,14 @@ footer hr {
     .switch_label {
         display: none;
     }
-    #service p {
+    #section_service p {
         font-size: 25px;
     }
-    #service .service1 ul {
+    #section_service .section_service_container1 ul {
         margin-left: 40px;
         font-size: 20px
     }
-    #service .service2 ul {
+    #section_service .section_service_container2 ul {
         font-size: 20px
     }
     #backgroundContainer h1 {
@@ -1128,80 +1128,80 @@ footer hr {
         position: relative;
         bottom: 300px;
     }
-    #projet #allTheGame .jeux1:hover,
-    #projet #allTheGame .jeux2:hover,
-    #projet #allTheGame .jeux3:hover {
+    #section_projet .section_projet_container .section_projet_container_card1:hover,
+    #section_projet .section_projet_container .section_projet_container_card2:hover,
+    #section_projet .section_projet_container .section_projet_container_card3:hover {
         transform: none;
     }
-    #projet #allTheGame {
+    #section_projet .section_projet_container {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    #projet hr {
+    #section_projet hr {
         width: 540px;
         border: 1px solid black;
     }
-    #projet h1 {
+    #section_projet h1 {
         font-size: 44px;
         line-height: 29px;
     }
-    #projet #allTheGame .jeux1 img,
-    #projet #allTheGame .jeux2 img,
-    #projet #allTheGame .jeux3 img {
+    #section_projet .section_projet_container .section_projet_container_card1 img,
+    #section_projet .section_projet_container .section_projet_container_card2 img,
+    #section_projet .section_projet_container .section_projet_container_card3 img {
         width: 100%;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
-    #projet #allTheGame .jeux1,
-    #projet #allTheGame .jeux2,
-    #projet #allTheGame .jeux3 {
+    #section_projet .section_projet_container .section_projet_container_card1,
+    #section_projet .section_projet_container .section_projet_container_card2,
+    #section_projet .section_projet_container .section_projet_container_card3 {
         width: 70%;
         height: 65vh;
     }
-    #projet #allTheGame .jeux1 {
+    #section_projet .section_projet_container .section_projet_container_card1 {
         background-color: #FFC1A8;
     }
-    #projet #allTheGame .jeux2 {
+    #section_projet .section_projet_container .section_projet_container_card2 {
         background-color: #6CC3BD;
     }
-    #projet #allTheGame .jeux3 {
+    #section_projet .section_projet_container .section_projet_container_card3 {
         background-color: #7C7AA1;
     }
-    #projet #allTheGame .jeux1:hover,
-    #projet #allTheGame .jeux2:hover,
-    #projet #allTheGame .jeux3:hover {
+    #section_projet .section_projet_container .section_projet_container_card1:hover,
+    #section_projet .section_projet_container .section_projet_container_card2:hover,
+    #section_projet .section_projet_container .section_projet_container_card3:hover {
         transform: none;
     }
-    #equipe .groupe {
+    #section_equipe .groupe {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    #equipe .groupe .photo .profil {
+    #section_equipe .groupe .photo .profil {
         height: 165px;
         width: 165px;
     }
-    #equipe .groupe .photo {
+    #section_equipe .groupe .photo {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 70px;
     }
-    #equipe .groupe .left {
+    #section_equipe .groupe .left {
         padding-left: 0;
     }
-    #equipe .groupe {
+    #section_equipe .groupe {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 70px;
     }
-    #equipe .groupe .photo p {
+    #section_equipe .groupe .photo p {
         margin-top: 20px;
         font-size: 20px;
     }
-    #equipe .passion {
+    #section_equipe .passion {
         width: 50px;
         height: auto;
         padding-bottom: 20px;
