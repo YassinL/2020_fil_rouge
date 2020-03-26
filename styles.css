@@ -841,7 +841,7 @@ video {
             box-shadow: 10px 10px #151515;
 }
 
-#section_contact button[type="submit"] {
+#section_contact button {
     width: 182px;
     height: 38px;
     border: #151515 solid 1px;
@@ -852,7 +852,7 @@ video {
     transition: 0.5s;
 }
 
-#section_contact button[type="submit"]:hover {
+#section_contact button:hover {
     border: #fff 1px solid;
     background-color: #151515;
     color: white;
@@ -1246,7 +1246,7 @@ footer hr {
         background: white;
         border-radius: initial;
     }
-    #section_contact button[type="submit"] {
+    #section_contact button {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
@@ -1531,7 +1531,7 @@ footer hr {
         background: white;
         border-radius: initial;
     }
-    #section_contact button[type="submit"] {
+    #section_contact button {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
@@ -1801,7 +1801,7 @@ footer hr {
         background: white;
         border-radius: initial;
     }
-    #section_contact button[type="submit"] {
+    #section_contact button {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
@@ -2098,7 +2098,7 @@ footer hr {
         background: white;
         border-radius: initial;
     }
-    #section_contact button[type="submit"] {
+    #section_contact button {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
