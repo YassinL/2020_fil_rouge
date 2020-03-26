@@ -506,8 +506,8 @@ video {
 
 #projet #allTheGame .jeux2 a img {
     border-radius: 3%;
-   border-bottom: white solid 1px;
-   width: 100%;
+    border-bottom: white solid 1px;
+    width: 100%;
 }
 
 #projet #allTheGame .jeux3 a img {
@@ -517,6 +517,7 @@ video {
 }
 
 #projet #allTheGame .jeux1 {
+    padding: 5px;
     background-color: #151515;
     color: white;
     margin-bottom: 60px;
@@ -524,12 +525,14 @@ video {
     transition-duration: 1s;
     transition-timing-function: ease;
     border-radius: 3%;
-    height: 60vh;
+    height: 65vh;
+    width: 50vh;
     cursor: pointer;
     border: 1px solid white;
 }
 
 #projet #allTheGame .jeux2 {
+    padding: 5px;
     background-color: #151515;
     color: white;
     margin-bottom: 60px;
@@ -537,11 +540,14 @@ video {
     transition-duration: 1s;
     transition-timing-function: ease;
     border-radius: 3%;
-    height: 60vh;
+    height: 65vh;
+    width: 50vh;
     cursor: pointer;
+    border: 1px solid white;
 }
 
 #projet #allTheGame .jeux3 {
+    padding: 5px;
     background-color: #151515;
     color: white;
     margin-bottom: 60px;
@@ -549,8 +555,10 @@ video {
     transition-duration: 1s;
     transition-timing-function: ease;
     border-radius: 3%;
-    height: 60vh;
+    height: 65vh;
+    width: 50vh;
     cursor: pointer;
+    border: 1px solid white;
 }
 
 #projet #allTheGame .jeux1 h3,
