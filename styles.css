@@ -515,7 +515,7 @@ video {
     padding: 140px 0 140px 0;
 }
 
-#section_service p {
+#section_service h2 {
     font-size: 20px;
     text-align: center;
     width: 70%;
@@ -1042,6 +1042,9 @@ footer hr {
     nav .logo {
         margin: 10px 0 0 0;
     }
+    .switch_label {
+        display: none;
+    }
 }
 
 @media (min-width: 68em) {
@@ -1275,9 +1278,6 @@ footer hr {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     
     /* PARTIE AGENCE */
@@ -1306,12 +1306,6 @@ footer hr {
     
     iframe {
         display: none;
-    }
-    
-    footer svg {
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     
     footer svg.instagram{
@@ -1560,9 +1554,6 @@ footer hr {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     
     /* PARTIE AGENCE */
@@ -1594,12 +1585,6 @@ footer hr {
     
     iframe {
         display: none;
-    }
-    
-    footer svg {
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     
     footer svg.instagram{
@@ -1830,9 +1815,6 @@ footer hr {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     /* PARTIE ADRESSES */
 
@@ -1843,13 +1825,6 @@ footer hr {
         margin-left: 40px;
     }
 
-
-    footer svg {
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
-    }
-    
     footer svg.instagram{
         fill: #F67E7D;
     }
@@ -2127,9 +2102,6 @@ footer hr {
         border: #fff 1px solid;
         background-color: #151515;
         color: white;
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     /* PARTIE ADRESSES */
 
@@ -2138,13 +2110,6 @@ footer hr {
     }
     #section_adress .section_adress_container .plan_contact {
         margin-left: 40px;
-    }
-
-
-    footer svg {
-        -webkit-transition: 0;
-        -o-transition: 0;
-        transition: 0;
     }
     
     footer svg.instagram{

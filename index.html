@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virtual Virus</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Megrim|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim%7CMontserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="icon" type="image/png" href="./Images/bacteria.svg"/>
 
@@ -18,10 +18,10 @@
 <body>
     <header>
         <nav>
-            <input class="menu__checkbox" type="checkbox" role="Menu" aria-label="Menu" aria-controls="navigation" aria-haspopup="true" id="menu">
+            <input class="menu__checkbox" type="checkbox" id="menu">
             <label class="menu__icon" for="menu"><span class="hamburger"></span></label>
             <a href="#" class="menu_icon_link">
-                <svg class="menu_icon_link_logo" enable-background="new 0 0 64 64" height="50" viewBox="0 0 64 64" width="50" xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu_icon_link_logo" enable-background="new 0 0 64 64" height="40" viewBox="0 0 64 64" width="40" xmlns="http://www.w3.org/2000/svg">
                     <g>
                     <path d="m29 28c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"/>
                     <path d="m6.999 32c0-1.103-.897-2-2-2s-2 .897-2 2 .897 2 2 2c1.103-.001 2-.898 2-2z"/>
@@ -46,15 +46,15 @@
                 <li><a href="#section_projet">Projets</a></li>
                 <li><a href="#section_equipe">Equipe</a></li>
                 <li><a href="#section_contact">Contacts</a></li>
-                <input class="container_toggle" type="checkbox" id="switch" name="mode">
-                <label class="switch_label" for="switch">Toggle</label>
             </ul>
+            <input class="container_toggle" type="checkbox" id="switch" name="mode">
+                <label class="switch_label" for="switch">Toggle</label>
 
         </nav>
 
     </header>
 
-    <section class="section_blank"></section>
+    <div class="section_blank"></div>
 
     <section id="section_video">
 
@@ -65,7 +65,7 @@
                 <h2>Spécialisé dans la VR</h2>
             </div>
 
-            <video autoplay loop mute class="section_video_container_sources">
+            <video autoplay loop muted class="section_video_container_sources">
 
                 <source src="./Vidéos/vrenfant.webm" type="video/webm">
                 <source src="./Vidéos/vrenfant.ogv" type="video/ogv">
@@ -78,12 +78,13 @@
     </section>
 
     <section id="section_service">
-        <p>Nous avons prévu d'être <span><strong>la meilleure alternative de conception de réalité virtuelle</strong></span>. 
+
+        <h2>Nous avons prévu d'être <span><strong>la meilleure alternative de conception de réalité virtuelle</strong></span>. 
         Vous avez un projet, on a la solution pour le réaliser. <br><br> 
         Vous vivrez une expérience d’immersion à 360° dans un monde artificiel que vous avez imaginé. 
         Notre expérience dans la VR, permet de s'adapter en fonction de nos clients. Vous vivrez votre 
         projet d'un bout à l'autre de votre processus de création. 
-        </p>
+        </h2>
         
         <div class="section_service_container1">
             
@@ -212,7 +213,7 @@
                 <p>Dev. Web & Patissier</p>
             </div>
             <div class="equipe_container_member left">
-                <svg class="equipe_member_svg" width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72.371px" height="72.372px" viewBox="0 0 72.371 72.372" style="enable-background:new 0 0 72.371 72.372;"
+                <svg class="equipe_member_svg" width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72.371 72.372" style="enable-background:new 0 0 72.371 72.372;"
                     xml:space="preserve">
 <g>
 	<path d="M22.57,2.648c-4.489,1.82-8.517,4.496-11.971,7.949C7.144,14.051,4.471,18.08,2.65,22.568C0.892,26.904,0,31.486,0,36.186
@@ -418,8 +419,9 @@
                 </div>
             </div>
             <iframe class="plan_contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.233127312743!2d2.3267673504967163!3d48.81561321157134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67107facf0c43%3A0xe7e0e0cdc74b9b7f!2s21%20Rue%20de%20la%20Vanne%2C%2092120%20Montrouge!5e0!3m2!1sfr!2sfr!4v1584108201968!5m2!1sfr!2sfr"
-                width="492" height="369" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                width="492" height="369" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+        
     </section>
     <footer>
         <div class="section_socialmedia">
