@@ -177,14 +177,11 @@ nav  .menu_icon_link:focus {
 /* PARTIE TOGGLE */
 
 html[data-theme='dark'] {
-    background: var(--lightBg);
-    --lightBtn: #FFDF53;
-    --lightBg: #151515;
-    --lightColor: #fff;
+    background: #151515;
 }
 
 html[data-theme="dark"] body {
-    color: var(--lightColor);
+    color: #fff;
 }
 
 html[data-theme="dark"] nav  .menu_icon_link:hover,
@@ -193,8 +190,7 @@ html[data-theme="dark"] nav  .menu_icon_link:focus {
 }
 
 html[data-theme="dark"] nav .menu_icon_link_logo {
-    fill: var(--lightColor);
-    --lightColor: #fff;
+    fill: #fff;
 }
 html[data-theme="dark"] .hamburger {
     background: #fff;
@@ -209,18 +205,15 @@ html[data-theme="dark"] .menu__checkbox:checked~.menu__icon {
 }
 
 html[data-theme="dark"] .section_socialmedia_svg{
-    fill: var(--lightColor);
-    --lightColor: #fff;
+    fill: #fff;
 }
 html[data-theme="dark"] .svg_icons{
-    fill: var(--lightColor);
-    --lightColor: #fff;
+    fill: #fff;
 }
 
 html[data-theme="dark"] nav,
 html[data-theme="dark"] nav ul {
-    background-color: var(--lightBg);
-    --lightBg: #151515;
+    background-color: #151515;
 }
 
 html[data-theme="dark"] nav li a:hover,
@@ -228,10 +221,8 @@ html[data-theme="dark"] nav li a:focus,
 html[data-theme="dark"] .menu__checkbox:hover,
 html[data-theme="dark"] .menu__checkbox:focus,
 html[data-theme="dark"] :focus {
-    background-color: var(--lightColor);
-    --lightColor: #fff;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    background-color: #fff;
+    color: #151515;
 }
 
 html[data-theme="dark"] a {
@@ -244,49 +235,38 @@ html[data-theme="dark"] nav {
 }
 
 html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card1 {
-    background-color: var(--lightColor);
-    --lightColor: #fff;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    background-color: #fff;
+    color: #151515;
 }
 
 html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card1:hover {
     background-color: #FFC1A8;
-    color: var(--lightColor);
-    --lightColor: #fff;
+    color: #fff;
 }
 
 html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card2 {
-    background-color: var(--lightColor);
-    --lightColor: #fff;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    background-color: #fff;
+    color: #151515;
 }
 
 html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card2:hover {
     background-color: #6CC3BD;
-    color: var(--lightColor);
-    --lightColor: #fff;
+    color: #fff;
 }
 
 html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card3 {
-    background-color: var(--lightColor);
-    --lightColor: #fff;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    background-color: #fff;
+    color: #151515;
 }
 
 html[data-theme="dark"] #section_projet .section_projet_container .section_projet_container_card3:hover {
     background-color: #7C7AA1;
-    color: var(--lightColor);
-    --lightColor: #fff;
+    color: #fff;
 }
 
 html[data-theme="dark"] #section_equipe {
-    background-color: var(--lightColor);
-    --lightColor: #fff;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    background-color: #fff;
+    color: #151515;
 }
 
 html[data-theme="dark"] #section_equipe .section_equipe_container .equipe_container_member .equipe_member_decoration {
@@ -296,15 +276,13 @@ html[data-theme="dark"] #section_equipe .section_equipe_container .equipe_contai
 html[data-theme="dark"] #section_contact form input {
     -webkit-box-shadow: 10px 10px white;
             box-shadow: 10px 10px white;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    color: #151515;
 }
 
 html[data-theme="dark"] #section_contact form textarea {
     -webkit-box-shadow: 10px 10px white;
             box-shadow: 10px 10px white;
-    color: var(--lightBg);
-    --lightBg: #151515;
+    color: #151515;
 }
 
 html[data-theme="dark"] #section_contact form button {
@@ -1071,8 +1049,8 @@ footer hr {
                                 /* PARTIE PHONE PORTRAIT */
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
+  and (min-width: 320px) 
+  and (max-width: 767px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
@@ -1340,8 +1318,8 @@ footer hr {
 
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
+  and (min-width: 320px) 
+  and (max-width: 767px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
@@ -1613,8 +1591,8 @@ footer hr {
 
     
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1112px) 
+  and (min-width: 768px) 
+  and (max-width: 1112px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -1850,8 +1828,8 @@ footer hr {
 
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1112px) 
+  and (min-width: 768px) 
+  and (max-width: 1112px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -2136,8 +2114,8 @@ footer hr {
 
 
 @media screen 
-  and (min-device-width: 1500px) 
-  and (max-device-width: 1920px) 
+  and (min-width: 1500px) 
+  and (max-width: 1920px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 
     #section_service p {
