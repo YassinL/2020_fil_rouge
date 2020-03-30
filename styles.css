@@ -695,6 +695,10 @@ video {
     border-radius: 100%;
 }
 
+#section_equipe h2 {
+    display: none;
+}
+
 #section_equipe .section_equipe_container .equipe_container_member {
     display: -webkit-box;
     display: -ms-flexbox;
